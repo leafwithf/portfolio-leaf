@@ -4,44 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="icon" href="assets/img/logoic.ico" type="icon">
-
-    <!--CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">
-
-    <!--Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
-
-    <!-- AOS -->
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Portfolio Raffa</title>
 </head>
 
 <body>
 
-    <!--Botão voltar ao topo-->
+    <!--Botão voltar ao topo e download-->
     <div id="backToTop" class="fixed-button">
         <i class="bi bi-chevron-up"></i>
     </div>
-
-    <!--Botão WhatsApp-->
-    <div id="whatsappButton" class="fixed-button">
-        <i class="bi bi-whatsapp"></i>
+    <div id="downloadButton" class="fixed-button">
+        <i class="bi bi-download"></i>
     </div>
 
-    <!--Container Geral-->
+    <!--Header-->
     <div class="container">
-
-        <!--Header-->
         <header class="header">
             <div class="logo">
                 <img src="assets/img/logo.png" alt="">
@@ -67,7 +55,6 @@
                 </nav>
             </div>
         </header>
-        <!--Fim Header-->
 
         <!--Início-->
         <main id="inicio" class="inicio">
@@ -77,19 +64,22 @@
                         <img src="assets/img/logo-cut.png" alt="Logo">
                     </div>
                     <div class="name-inicio">
-                        <a>Raffa</a></div>
+                        <a>Raffa</a>
+                    </div>
                     <div class="surname-inicio">
-                        <a>Fernandes</a></div>
+                        <a>Fernandes</a>
+                    </div>
                     <div class="destaque-inicio">
-                        <a>Portfólio</a></div>
+                        <a>Portfólio</a>
+                    </div>
                 </div>
-                    <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" id="cta-sobre">
-                        <span>Me conheça</span>
-                        <svg width="15px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
-                    </button>
+                <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" id="cta-sobre">
+                    <span>Me conheça</span>
+                    <svg width="15px" height="10px" viewBox="0 0 13 10">
+                        <path d="M1,5 L11,5"></path>
+                        <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                </button>
             </div>
         </main>
 
@@ -100,13 +90,16 @@
                     <div class="left-sobre" data-aos="fade-right" data-aos-duration="1000">
                         <div class="textos-sobre">
                             <h1>Olá, me chamo Rafael</h1>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quod quis nemo
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis quod quis nemo
                                 provident dignissimos.</p>
                         </div>
                         <div class="redes-sociais">
-                            <a href="https://www.instagram.com/folhaem_ingles">INSTAGRAM<i class="bi bi-arrow-right"></i></a>
+                            <a href="https://www.instagram.com/folhaem_ingles">INSTAGRAM<i
+                                    class="bi bi-arrow-right"></i></a>
                             <a href="https://github.com/leafwithf">GITHUB<i class="bi bi-arrow-right"></i></a>
-                            <a href="https://www.linkedin.com/in/rafa-fernandes-a9b944344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LINKEDIN<i class="bi bi-arrow-right"></i></a>
+                            <a
+                                href="https://www.linkedin.com/in/rafa-fernandes-a9b944344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LINKEDIN<i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="right-sobre" data-aos="fade-left" data-aos-duration="1000">
@@ -115,16 +108,8 @@
                         </div>
                     </div>
                 </div>
-                <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" id="cta-skills">
-                    <span>Continue</span>
-                    <svg width="15px" height="10px" viewBox="0 0 13 10">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                </button>
             </div>
         </section>
-        <!--Fim Sobre-->
 
         <!--Skills-->
         <section id="skills" class="skills">
@@ -139,116 +124,54 @@
                 <div class="conteudo-skills">
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <i class="bi bi-palette"></i>
-                        <h3>Lorem ipsum dolor sit.</h3>
+                        <h3>Adobe Ilustrator.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <i class="bi bi-type"></i>
-                        <h3>Lorem ipsum dolor sit.</h3>
+                        <i class="bi bi-camera"></i>
+                        <h3>Adobe Photoshop.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-                        <i class="bi bi-book"></i>
+                        <i class="bi bi-braces"></i>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                        <i class="bi bi-graph-up"></i>
+                        <i class="bi bi-translate"></i>
                         <h3>Lorem ipsum dolor sit.</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Fim Skills-->
 
-        <!--Serviços-->
-        <section id="servicos" class="servicos">
-            <div class="container-servicos">
-                <div class="headline-servicos" data-aos="fade-up" data-aos-duration="1000">
-                    <div class="titulo-servicos">
-                        <h1>Serviços</h1>
-                    </div>
-                    <div class="descricao-servicos" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi amet vel maiores est illum
-                            expedita debitis numquam dolorum?</p>
-                    </div>
-                </div>
-                <div class="servicos-cards">
-                    <!--Serviço 1-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Lorem ipsum dolor sit.</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-share"></i></div>
-                    </div>
-                    <!--Serviço 2-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Lorem ipsum dolor sit.</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-diagram-3"></i></div>
-                    </div>
-                    <!--Serviço 3-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Lorem ipsum dolor sit.</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-globe"></i></div>
-                    </div>
-                    <!--Serviço 4-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Lorem ipsum dolor sit.</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-currency-dollar"></i></div>
-                    </div>
-                    <!--Serviço 5-->
-                    <div class="card-servicos-left" data-aos="fade-right" data-aos-delay="700" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Lorem ipsum dolor sit.</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-layers"></i></div>
-                    </div>
-                    <!--Serviço 6-->
-                    <div class="card-servicos" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
-                        <div class="card-titulo">
-                            <h1>Lorem ipsum dolor sit.</h1>
-                        </div>
-                        <div class="card-icon"><i class="bi bi-camera-video"></i></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Fim Serviços-->
+        <!--Frase de Transição-->
 
-        <!--Complemento FREE YOUR MIND-->
         <section id="free-your-mind" class="free-your-mind">
             <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
                 <div class="line-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span> ALGUMA </span>
+                    <span> HESITAÇÃO </span>
                     <span class="line"></span>
                 </div>
                 <div class="line-container center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <span class="line"></span>
-                    <span> FRASE </span>
+                    <span> IMPLICA</span>
                     <span class="line"></span>
                 </div>
                 <div class="line-container right" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                     <span class="line"></span>
-                    <span> AQUI </span>
+                    <span> DERROTA </span>
                 </div>
             </div>
         </section>
-        <!--Fim FREE YOUR MIND-->
 
         <!--Portfolio-->
         <section id="portfolio" class="portfolio">
             <div class="container-portfolio" data-aos="fade-up" data-aos-duration="1000">
                 <div class="headline-portfolio">
                     <h1 class="titulo">Portfolio</h1>
-                    <span class="descricao">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
-                        consequuntur odit, dolorem architecto optio vitae perspiciatis!</span>
+                    <span class="descricao">Aqui alguns projetos desenvolvidos e postados online ou pelo github!</span>
                 </div>
                 <div class="container-case">
                     <!--Case 1-->
@@ -264,10 +187,11 @@
                         </div>
                         <div class="textos-case">
                             <div class="conteudo-textos-case">
-                                <h1>CLIENTE</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
-                                    expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <span>Tipo do serviço</span>
+                                <h1>Projeto Fotos</h1>
+                                <p>Desenvolvido com o objetivo pessoal de compartilhar fotos autorais — incluindo viagens, flores, frases, pôr do sol, lua e afins — este projeto também representa um desafio de aprendizado. A plataforma conta com uma interface intuitiva, uma galeria interativa e filtros que facilitam a organização e a apreciação das imagens.</p>
+                                <a href="https://leafwithf.netlify.app" target="_blank"
+                                    rel="noopener noreferrer"><span>Tipo do serviço</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -275,10 +199,11 @@
                     <div class="case2" data-aos="fade-left" data-aos-delay="300">
                         <div class="textos-case">
                             <div class="conteudo-textos-case">
-                                <h1>CLIENTE</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
-                                    expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <span>Tipo do serviço</span>
+                                <h1>M.I.A.</h1>
+                                <p>Desenvolvida com finalidade acadêmica, a MIA é uma empresa fictícia voltada para a segurança residencial. O projeto simula a interface de um sistema de monitoramento inteligente, oferecendo funcionalidades como câmeras de vigilância, sensores ambientais e um mapa interativo da casa. Com um design funcional, a plataforma demonstra a integração da tecnologia para o controle e acompanhamento remoto da segurança do lar.</p>
+                                <a href="https://tccmia.netlify.app" target="_blank"
+                                    rel="noopener noreferrer"><span>Ir ao Site</span>
+                                </a>
                             </div>
                         </div>
                         <div class="imagens-case">
@@ -304,21 +229,25 @@
                         </div>
                         <div class="textos-case">
                             <div class="conteudo-textos-case">
-                                <h1>CLIENTE</h1>
+                                <h1></h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
                                     expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <span>Tipo do serviço</span>
+                                <a href="https://leafwithf.netlify.app" target="_blank"
+                                    rel="noopener noreferrer"><span>Tipo do serviço</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <!--Case 4-->
+                    <!--Case 4
                     <div class="case4" data-aos="fade-left" data-aos-delay="500">
                         <div class="textos-case">
                             <div class="conteudo-textos-case">
                                 <h1>CLIENTE</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
                                     expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <span>Tipo do serviço</span>
+                                <a href="https://leafwithf.netlify.app" target="_blank"
+                                    rel="noopener noreferrer"><span>Tipo do serviço</span>
+                                </a>
                             </div>
                         </div>
                         <div class="imagens-case">
@@ -331,92 +260,47 @@
                             </div>
                         </div>
                     </div>
+                    --> 
                 </div>
             </div>
         </section>
-        <!--Fim Portfolio-->
 
-        <!--Contato-->
-        <section id="contato" class="contato">
-            <div class="container-contato" data-aos="fade-up" data-aos-duration="1000">
-                <div class="headline-contato" data-aos="fade-up" data-aos-delay="200">
-                    <div class="titulo-contato">
-                        <h1>Contato</h1>
-                    </div>
-                    <div class="descricao-contato">
-                        <ul class="lista-contato">
-                            <li><a href="#">WhatsApp: (55) 99999 - 9999</a></li>
-                            <li><a href="#">email@seuemail.com.br</a></li>
-                            <li><a href="#">Endereço Completo</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="conteudo-contato" data-aos="fade-up" data-aos-delay="400">
-                    <div class="formulario-contato">
-                        <h2>Entre em contato</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora harum aliquid ullam nobis,
-                            enim nostrum libero eum? Recusandae placeat aut obcaecati consequuntur!</p>
-                        <form class="form">
-                            <input type="text" placeholder="Digite seu nome completo">
-                            <input type="phone" placeholder="(55) 22222-2222">
-                            <input type="email" placeholder="Seu melhor email">
-                            <textarea name="mensagem" id="mensagem"
-                                placeholder="Escreva o que você deseja aqui..."></textarea>
-                            <button class="btn">Enviar</button>
-                        </form>
-                    </div>
-                    <div class="logo-contato" data-aos="fade-up" data-aos-delay="600">
-                        <img src="assets/img/imagem.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--Fim Contato-->
+       
 
         <!--Footer-->
         <footer class="footer" id="footer">
             <div class="container-footer">
                 <div class="footer-column logo-column">
-                    <img src="assets/img/SUA-LOGO-AQUI.png" alt="">
+                    <img src="assets/img/logo.png" alt="">
                 </div>
                 <div class="footer-column menu-column">
                     <nav class="footer-nav">
                         <a href="#inicio">Início</a>
                         <a href="#sobre">Sobre</a>
-                        <a href="#servicos">Serviços</a>
                         <a href="#portfolio">Portfolio</a>
-                        <a href="#contato">Contato</a>
                     </nav>
                 </div>
                 <div class="footer-column social-column">
                     <ul class="social-links">
                         <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
                         <li><a href="#"><i class="bi bi-github"></i> GitHub</a></li>
-                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
                         <li><a href="#"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-column credits-column">
                 <p>&copy; 2024 Todos os direitos reservados.</p>
-                <p>Desenvolvido por RM│Dev.</p>
+                <p>Desenvolvido por Raffa.</p>
             </div>
         </footer>
-        <!--Fim Footer-->
-
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-    <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Inicialização do AOS -->
     <script>
         AOS.init();
     </script>
 
-    <!--JavaScript-->
     <script src="assets/js/header.js"></script>
     <script src="assets/js/actionButton.js"></script>
     <script src="assets/js/menu.js"></script>

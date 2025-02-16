@@ -47,7 +47,6 @@ body {
     justify-content: center;
     font-family: var(--font-pequena);
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
     transition: transform 0.3s ease-out;
 }
 
@@ -82,17 +81,17 @@ a {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 }
 
-#whatsappButton {
+#downloadButton {
     bottom: 20px;
     right: 20px;
-    background-color: #25D366;
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
     animation: pulse 2s infinite;
 }
 
-#whatsappButton i {
+#downloadButton i {
     font-size: 24px;
-    color: #fff;
+    color: #000000;
 }
 
 .fixed-button i {
@@ -102,15 +101,15 @@ a {
 @keyframes pulse {
     0% {
         transform: scale(1);
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     50% {
         transform: scale(1.1);
-        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     }
     100% {
         transform: scale(1);
-        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 }
 
@@ -142,7 +141,16 @@ a {
     backdrop-filter: blur(10px); 
 }
 
-/* Menu */
+header, .nav-menu {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+header.visible, .nav-menu.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 /* Logo */
@@ -774,6 +782,8 @@ a {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .line-container {
@@ -791,7 +801,7 @@ a {
 
 .container-free-your-mind span {
     color: var(--color-black);
-    font-size: 15vw;
+    font-size: 12vw;
 }
 
 .center span {
