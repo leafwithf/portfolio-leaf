@@ -12,7 +12,7 @@
     --color-gray1: #3d4143;
     --color-gray2: #9c9d9d;
     --color-white: #f6f6f6;
-    --color-destaque1: #e7fc00;
+    --color-destaque1: #606159;
     --color-destaque2: #444744;
 }
 
@@ -547,22 +547,36 @@ header.visible, .nav-menu.visible {
     position: absolute;
 }
 
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
-
 .imagem-sobre img {
     width: 90%;
     z-index: 99;
 }
+mark {
+    color: #000;
+    background-color: white;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 40px; 
+    line-height: 40px; 
+    animation: typing 5s steps(30) 1 normal forwards, blink 0.75s step-end ;
+}
 
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 65%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
 /*************** SKILLS *****/
 .skills {
     margin-top: 10%;
@@ -571,6 +585,7 @@ header.visible, .nav-menu.visible {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10%;
 }
 
 .container-skills {
@@ -819,6 +834,42 @@ header.visible, .nav-menu.visible {
     margin: 0 4rem;
 }
 
+#hesitacao, #a, #derrota {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.center {
+    justify-content: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+span {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Animação de "piscar" */
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.blink {
+    animation: blink 1s infinite;
+}
+
 /*************** PORTFOLIO *****/
 .portfolio {
     width: 100%;
@@ -828,6 +879,8 @@ header.visible, .nav-menu.visible {
     align-items: center;
     justify-content: center;
     padding: 2rem 0rem 7rem 0rem;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .container-portfolio {
