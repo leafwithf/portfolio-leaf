@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /admin/
 Allow: /
-Sitemap: https://portfolioraffa.netlify.app
+Sitemap: https://portfolioraffa.netlify.app/sitemap.xml
