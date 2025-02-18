@@ -21,6 +21,7 @@
     .container {
         padding: 0;
     }
+    
 
     /************************** SOBRE ***/
     .sobre {
@@ -62,6 +63,26 @@
         height: 100%;
         margin-bottom: 70%;
     }
+
+    mark {
+        color: #000;
+        background-color: white;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        height: 40px; 
+        line-height: 40px; 
+        animation: typing 5s steps(30) 1 normal forwards, blink 1.75s step-end ;
+    }
+    
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 63%;
+    }
+}
 
 
     /************************** PORTFOLIO ***/
@@ -174,11 +195,12 @@
     /* Ajustes para a seção SOBRE */
     .sobre {
         height: auto;
+        margin-top: 70%;
     }
 
     .container-sobre {
         height: auto;
-        margin-top: 10%;
+        margin-top: 20%;
     }
 
     .headline-sobre {
@@ -263,5 +285,84 @@
     .textos-case {
         width: 100%;
         height: auto; /* Ajuste na altura */
+    }
+}
+/* Estilos para telas de 300px ou menores */
+@media (max-width: 300px) {
+
+    /* Ajustes na imagem */
+    #imagem {
+        width: 30%; /* Reduz ainda mais o tamanho da imagem */
+    }
+
+    /* Logo ajuste */
+    .logo-inicio {
+        width: 100%;
+        height: auto;
+    }
+
+    .logo-inicio img {
+        content: url('../../assets/img/logo-small.png'); /* Outra imagem para telas muito pequenas */
+        transform: translateX(120%) translateY(-250%) scale(2.5);
+    }
+
+    /* Ajuste para sobrenome */
+    .surname-inicio {
+        width: 100%;
+        height: 10%;
+    }
+
+    /* Ajuste de container para telas pequenas */
+    .container {
+        padding: 0 0.5rem; /* Redução do padding */
+    }
+
+    /* Ajustes para a seção SOBRE */
+    .sobre {
+        margin-top: 50%;
+    }
+
+    .container-sobre {
+        margin-top: 15%;
+    }
+
+    .conteudo-sobre {
+        gap: 1rem;
+    }
+
+    .imagem-sobre {
+        margin-top: 20%;
+        width: 70%;
+        margin-bottom: 40%;
+    }
+
+    /* Ajustes para o Portfolio */
+    .container-portfolio {
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .headline-portfolio .titulo {
+        font-size: 2rem; /* Redução do tamanho do título */
+    }
+
+    .headline-portfolio .descricao {
+        font-size: 0.9rem;
+    }
+
+    .case1,
+    .case3,
+    .case2, 
+    .case4 {
+        gap: 0.5rem;
+        margin-bottom: 3%;
+    }
+
+    .imagens-case {
+        height: 30vh; /* Reduzir ainda mais a altura das imagens */
+    }
+
+    .textos-case {
+        font-size: 0.9rem; /* Redução no tamanho do texto */
     }
 }
