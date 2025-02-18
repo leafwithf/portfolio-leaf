@@ -1,6 +1,23 @@
 /* Responsividade para iPad (tablet) */
 @media (max-width: 1024px) {
 
+    #imagem {
+        width: 120px; /* Ajuste para telas menores */
+    }
+    .logo-inicio {
+        width: 100%;
+        height: 100%;
+       
+    }
+    
+    .logo-inicio img {
+        content: url('../../assets/img/logo.png'); 
+        transform: translateX(140%) translateY(-90%);/* Nova imagem para telas menores */
+    }
+    .surname-inicio{
+        margin-right: 5%;
+    }
+      
     .container {
         padding: 0;
     }
@@ -12,6 +29,7 @@
 
     .container-sobre {
         height: auto;
+        margin-top: 35%
     }
     
     .headline-sobre {
@@ -33,46 +51,18 @@
     .right-sobre {
         width: 100%;
         height: auto;
+        margin-bottom: 10%;
+        margin-top: 5%;
     }
 
     .imagem-sobre {
+        margin-top: 50%;
         justify-content: center;
-    }
-
-    .complemento-sobre {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .complemento-sobre img {
-        position: unset;
         width: 100%;
+        height: 100%;
+        margin-bottom: 70%;
     }
 
-    /************************** SERVIÇOS ***/
-
-    .headline-servicos {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .titulo-servicos {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-    }
-
-    .titulo-servicos h1 {
-        font-size: 6rem;
-    }
-
-    .descricao-servicos {
-        width: 100%;
-        text-align: right;
-        font-size: 1.4rem;
-    }
 
     /************************** PORTFOLIO ***/
 
@@ -113,6 +103,7 @@
         gap: 1rem;
         height: auto;
         justify-content: center;
+        margin-bottom: 10%;
     }
 
     .case2, 
@@ -126,7 +117,8 @@
     
     .imagens-case {
         width: 100%;
-        height: 60vh
+        height: 60vh;
+        margin-bottom: 5%;
     }
 
     .textos-case {
@@ -134,72 +126,142 @@
         height: 35vh;
     }
 
-    /************************** CONTATO ***/
-    .contato {
-        padding: 0rem 1rem 2rem 1rem;
+}
+
+@media (min-width: 900px) {
+    .conteudo-skills {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 600px) {
+    .conteudo-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #imagem {
+        width: 100px; /* Ajuste para telas de tablets */
+    }
+}
+
+/* Estilos para telas de 469px ou menores */
+@media (max-width: 470px) {
+
+    /* Ajustes na imagem */
+    #imagem {
+        width: 40%; /* Reduzir o tamanho da imagem */
+    }
+
+    /* Logo ajuste */
+    .logo-inicio {
+        width: 100%;
+        height: auto; /* Manter a proporção da imagem */
+    }
+
+    .logo-inicio img {
+        content: url('../../assets/img/logo.png'); /* Nova imagem para telas menores */
+        transform: translateX(150%) translateY(-290%) scale(3); /* Ajuste da posição e escala */
+    }
+
+    /* Ajuste para sobrenome */
+    .surname-inicio {
+        margin-right: 5%; /* Menos margem no sobrenome */
+    }
+
+    /* Ajuste de container para telas pequenas */
+    .container {
+        padding: 0 1rem; /* Ajusta o padding da container */
+    }
+
+    /* Ajustes para a seção SOBRE */
+    .sobre {
         height: auto;
     }
 
-    .container-contato {
+    .container-sobre {
+        height: auto;
+        margin-top: 10%;
+    }
+
+    .headline-sobre {
+        height: auto;
+        position: relative;
+    }
+
+    .conteudo-sobre {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 1.5rem; /* Menor gap entre os itens */
+    }
+
+    .left-sobre,
+    .right-sobre {
         width: 100%;
         height: auto;
     }
 
-    .headline-contato {
+    .right-sobre {
+        margin-bottom: 5%;
+        margin-top: 3%;
+    }
+
+    .imagem-sobre {
+        margin-top: 30%;
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin-bottom: 55%;
+    }
+
+    /* Ajustes para o Portfolio */
+    .container-portfolio {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .headline-portfolio {
         flex-direction: column;
         height: auto;
     }
 
-    .titulo-contato {
+    .headline-portfolio .titulo {
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: left;
+        font-size: 3rem; /* Ajuste para um tamanho menor de texto */
     }
 
-    .titulo-contato h1 {
-        font-size: 6rem;
-    }
-
-    .descricao-contato {
+    .headline-portfolio .descricao {
         width: 100%;
-        text-align: right;
-        font-size: 1.4rem;
+        text-align: left;
+        font-size: 1rem;
     }
 
-    .descricao-contato a {
-        text-decoration: none;
-        color: var(--color-black);
-        font-size: 1.5rem;
-        letter-spacing: 1.5px;
-        line-height: 1.4;
-        font-weight: bold;
+    .container-case {
+        gap: 1rem;
     }
 
+    .case1,
+    .case3 {
+        flex-direction: column;
+        gap: 1rem;
+        height: auto;
+        justify-content: center;
+        margin-bottom: 5%;
+    }
 
-    .conteudo-contato {
-        padding-top: 2rem;
+    .case2, 
+    .case4 {
         flex-direction: column-reverse;
-    }
-
-    .logo-contato {
-        width: 100%;
+        gap: 1rem;
+        height: auto;
         justify-content: center;
     }
 
-    .logo-contato img{
+    .imagens-case {
         width: 100%;
-        max-height: 500px;
-        object-fit: cover;
+        height: 40vh; /* Reduzir a altura das imagens */
+        margin-bottom: 3%;
     }
 
-    .formulario-contato {
+    .textos-case {
         width: 100%;
-    }
-
-    .credits-column {
-        width: auto;
-        text-align: right;
-        margin-top: 0;
+        height: auto; /* Ajuste na altura */
     }
 }
