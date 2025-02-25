@@ -1,57 +1,47 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Ajusta para garantir que o site comece no topo ao recarregar
-    if (window.location.hash !== '#inicio') {
-        window.location.hash = '#inicio';
-    }
-
     const backToTopButton = document.getElementById('backToTop');
-    const downloadButton = document.getElementById('downloadButton');
 
-    function toggleButtons() {
-        const scrollPosition = window.scrollY;
-        
-        // Ajuste aqui o valor do scroll necessário para exibir os botões
-        if (scrollPosition > 0) { 
-            backToTopButton.style.display = 'flex';
-            downloadButton.style.display = 'flex';
-            setTimeout(() => {
-                backToTopButton.style.opacity = '1';
-                downloadButton.style.opacity = '1';
-            }, 10);
+    function toggleButton() {
+        if (window.scrollY > 70) {
+            if (!backToTopButton.classList.contains('visible')) {
+                backToTopButton.style.display = 'flex';
+                setTimeout(() => {
+                    backToTopButton.style.opacity = '1';
+                    backToTopButton.classList.add('visible');
+                }, 10);
+            }
         } else {
-            backToTopButton.style.opacity = '0';
-            downloadButton.style.opacity = '0';
-            setTimeout(() => {
-                backToTopButton.style.display = 'none';
-                downloadButton.style.display = 'none';
-            }, 500);
+            if (backToTopButton.classList.contains('visible')) {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.classList.remove('visible');
+                setTimeout(() => {
+                    if (window.scrollY <= 70) {
+                        backToTopButton.style.display = 'none';
+                    }
+                }, 300);
+            }
         }
     }
-    
 
-    // Adiciona o evento de scroll para exibir ou esconder os botões
-    document.addEventListener('scroll', toggleButtons);
+    document.addEventListener('scroll', toggleButton);
 
-    // Ação ao clicar no botão "Voltar ao Topo"
     backToTopButton.addEventListener('click', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    downloadButton.addEventListener('click', function () {
-        const link = document.createElement('a');
-        link.href = '../../assets/documents/Currículo-Rafa.pdf';
-        link.download = 'Currículo-Rafa.pdf'; 
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+    // Scroll suave para "Fale comigo"
+    document.getElementById("cta-contact").addEventListener("click", function () {
+        document.getElementById("contact").scrollIntoView({
+            behavior: "smooth"
+        });
     });
-        
 
-   document.getElementById("cta-sobre").addEventListener ("click", function(){
+    // Scroll suave para "Role para baixo!"
+    document.getElementById("cta-down").addEventListener("click", function () {
         document.getElementById("sobre").scrollIntoView({
             behavior: "smooth"
         });
-   });
+    });
 
-     
 });
+

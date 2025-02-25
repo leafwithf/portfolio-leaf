@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="google5cce857881be0ece"/>
+    <meta name="google-site-verification" content="google5cce857881be0ece" />
     <link rel="icon" href="assets/img/logoic.ico" type="icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">
@@ -24,16 +24,13 @@
     <div id="tela-inicial">
         <img id="imagem" src="assets/img/logo.png" alt="Clique para iniciar">
     </div>
-    
-    <!--Botão voltar ao topo e download-->
+
+    <!-- BACK-TO-TOP -->
     <div id="backToTop" class="fixed-button">
         <i class="bi bi-chevron-up"></i>
     </div>
-    <div id="downloadButton" class="fixed-button">
-        <i class="bi bi-download"></i>
-    </div>
 
-    <!--Header-->
+    <!--HEADER-->
     <div class="container">
         <header class="header">
             <div class="logo">
@@ -55,11 +52,13 @@
                     <a href="#inicio">INÍCIO</a>
                     <a href="#sobre">SOBRE</a>
                     <a href="#portfolio">PORTFOLIO</a>
-=                </nav>
+                    <a href="#contato">CONTATO</a>
+                    =
+                </nav>
             </div>
         </header>
 
-        <!--Início-->
+        <!--INICIO-->
         <main id="inicio" class="inicio">
             <div class="container-inicio">
                 <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
@@ -76,13 +75,25 @@
                         <a>Portfólio</a>
                     </div>
                 </div>
-                <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" id="cta-sobre">
-                    <span>Me conheça</span>
-                    <svg width="15px" height="10px" viewBox="0 0 13 10">
-                        <path d="M1,5 L11,5"></path>
-                        <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
-                </button>
+
+                <!-- CTA -->
+                <div class="cta-container">
+                    <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
+                        id="cta-contact">
+                        <span>Fale comigo</span>
+                        <svg width="15px" height="10px" viewBox="0 0 13 10">
+                            <path d="M1,5 L11,5"></path>
+                            <polyline points="8 1 12 5 8 9"></polyline>
+                        </svg>
+                    </button>
+
+                    <!-- CTA SCROLL -->
+                    <button class="cta-scroll" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
+                        id="cta-down">
+                        <i class="bi bi-mouse"></i>
+                        <span>role para baixo!</span>
+                    </button>
+                </div>
             </div>
         </main>
 
@@ -91,19 +102,21 @@
             <div class="container-sobre">
                 <div class="conteudo-sobre">
                     <div class="left-sobre" data-aos="fade-right" data-aos-duration="1000">
-                        <div class="textos-sobre">
+                        <div class="texts-about">
                             <h1>Olá, me chamo Rafael</h1>
-                            <p> Movido pela curiosidade, busco transformar ideias em experiências visuais cativantes, explorando novas formas de expressão. Este espaço reflete minha paixão pela inovação. 
-                                <br><br><mark>You're Welcome, Wilkomen!</mark>
+                            <p>
+                                Movido pela curiosidade, busco transformar ideias em experiências visuais cativantes,
+                                explorando novas formas de expressão. Este espaço reflete minha paixão pela inovação.
                             </p>
+                        <div class="data-about">
+                            <h1>02 Anos</h1>  
+                            <h1>04 projetos</h1>
                         </div>
-                        <div class="redes-sociais">
-                            <a href="https://www.instagram.com/folhaem_ingles">INSTAGRAM<i
-                                    class="bi bi-arrow-right"></i></a>
-                            <a href="https://github.com/leafwithf">GITHUB<i class="bi bi-arrow-right"></i></a>
-                            <a
-                                href="https://www.linkedin.com/in/rafa-fernandes-a9b944344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LINKEDIN<i
-                                    class="bi bi-arrow-right"></i></a>
+                            <div class="download-about">
+                                <a href="assets/documents/Currículo-Rafa.pdf" download="Currículo-Rafa.pdf"> Currículo
+                                    <i class="bi bi-download"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="right-sobre" data-aos="fade-left" data-aos-duration="1000">
@@ -116,37 +129,31 @@
         </section>
 
         <!--Skills-->
-        <section id="skills" class="skills">
-            <div class="container-skills" data-aos="fade-up" data-aos-duration="1000">
+        <section id="skills" class="skills" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container-skills">
                 <div class="headline-skills">
                     <div class="text-headline-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <h2>Minhas Skills</h2>
-                        <p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestias libero consequuntur.
                         </p>
                     </div>
                 </div>
-                <div class="conteudo-skills">
+                <div class="content-skills">
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                        <i class="bi bi-palette"></i>
-                        <h3>Design Gráfico.</h3>
-                        <p>Possuo curso de design atuando como freelancer em criaçao de logos, flayers e dentre outros.</p>
+                        <div class="skills-container">
+                            <div class="skill"><i class="bi bi-filetype-html"></i> HTML5</div>
+                            <div class="skill"><i class="bi bi-filetype-css"></i>  CSS3</div>
+                            <div class="skill"><i class="bi bi-filetype-js"></i>   JavaScript</div>
+                            <div class="skill"><i class="bi bi-filetype-ts"></i>   TypeScript</div>
+                            <div class="skill"><i class="bi bi-filetype-jsx"></i>  React.js</div>
+                            <div class="skill"><i class="bi bi-filetype-jsx"></i>  Node.js</div>
+                            <div class="skill"><i class="bi bi-bezier"></i>        Figma</div>
+                            <div class="skill"><i class="bi bi-pyhton"></i>        Python</div>
+                            <div class="skill"><i class="bi bi-adobe"></i>         Photoshop</div>
+                            <div class="skill"><i class="bi bi-pyhton"></i>        Ilustrator</div>
+                        </div>
                     </div>
-                    <div class="box-skills" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                        <i class="bi bi-camera"></i>
-                        <h3>Fotografia  e Edição.</h3>
-                        <p>Fotografia de um passatempo se tornboi algo pragmatico assim como a ediçao de videos tanto pelo PC quanto pelo MOBILE.</p>
-                    </div>  
-                    <div class="box-skills" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                        <i class="bi bi-braces"></i>
-                        <h3>Programação.</h3>
-                        <p>Meus conhecimentos em programaçao se tornam medianos, html, css, javascript, pyhton,  e um pouco de react.</p>
-                    </div>
-                    <div class="box-skills" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-                        <i class="bi bi-translate"></i>
-                        <h3>Linguagens.</h3>
-                        <p>Possuo saber de algumas línguas estrangeiras, sendo elas o ingles em nivel intermediario e o alemao que iniciei recentemente.</p>
-                    </div>
-                </div>  
+                </div>
             </div>
         </section>
 
@@ -159,116 +166,91 @@
                 </div>
                 <div class="line-container center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <span class="line"></span>
-                    <span> É A  </span>
+                    <span> É A </span>
                     <span class="line"></span>
                 </div>
                 <div class="line-container right" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                     <span class="line"></span>
                     <span> DERROTA </span>
                 </div>
-                
             </div>
         </section>
-        
-       
-        <!--Portfolio-->
-        <section id="portfolio" class="portfolio">
-            <div class="container-portfolio" data-aos="fade-up" data-aos-duration="1000">
-                <div class="headline-portfolio">
-                    <h1 class="titulo">Portfólio</h1>
-                    <span class="descricao">Aqui alguns projetos desenvolvidos e postados online ou pelo github!</span>
+
+        <section class="portfolio">
+            <h2>Confira alguns projetos realizados</h2>
+            <p>Você pode também conferir nas redes sociais aqui disponibilizadas</p>
+    
+            <div class="grid">
+                <div class="project" onclick="openModal('portfolio')">
+                    <img src="assets/img/MIA/index-mia.png" alt="Projeto 1">
                 </div>
-                <div class="container-case">
-                    <!--Case 1-->
-                    <div class="case1" data-aos="fade-right" data-aos-delay="200">
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/prFT/capa-ft.png" alt="">
-                                <img src="assets/img/prFT/index-ft.png" alt="">
-                                <img src="assets/img/prFT/art-ft.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
-                            </div>
-                        </div>
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>Projeto Fotos</h1>
-                                <p>Desenvolvido com o objetivo pessoal de compartilhar fotos autorais — incluindo viagens, flores, frases, pôr do sol, lua e afins — este projeto também representa um desafio de aprendizado. A plataforma conta com uma interface intuitiva, uma galeria interativa e filtros que facilitam a organização e a apreciação das imagens.</p>
-                                <a href="https://leafwithf.netlify.app" target="_blank"
-                                    rel="noopener noreferrer"><span>Ir ao Site</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Case 2-->
-                    <div class="case2" data-aos="fade-left" data-aos-delay="300">
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>M.I.A.</h1>
-                                <p>Desenvolvida com finalidade acadêmica, a MIA é uma empresa fictícia voltada para a segurança residencial. O projeto simula a interface de um sistema de monitoramento inteligente, oferecendo funcionalidades como câmeras de vigilância, sensores ambientais e um mapa interativo da casa. Com um design funcional, a plataforma demonstra a integração da tecnologia para o controle e acompanhamento remoto da segurança do lar.</p>
-                                <a href="https://tccmia.netlify.app" target="_blank"
-                                    rel="noopener noreferrer"><span>Ir ao Site</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/MIA/index-mia.png" alt="">
-                                <img src="assets/img/MIA/login-mia.png" alt="">
-                                <img src="assets/img/MIA/cliente-mia.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Case 3
-                    <div class="case3" data-aos="fade-right" data-aos-delay="400">
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
-                            </div>
-                        </div>
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1></h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
-                                    expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <a href="https://leafwithf.netlify.app" target="_blank"
-                                    rel="noopener noreferrer"><span>Tipo do serviço</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    -->
+                <div class="project" onclick="openModal('projeto-fotos')">
+                    <img src="assets/img/prFT/index-ft.png" alt="Projeto 2">
+                </div>
+                <div class="project" onclick="openModal('mia')">
+                    <img src="assets/img/prFT/index-ft.png" alt="Projeto 3">
+                </div>
 
-                    <!--Case 4
-                    <div class="case4" data-aos="fade-left" data-aos-delay="500">
-                        <div class="textos-case">
-                            <div class="conteudo-textos-case">
-                                <h1>CLIENTE</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique quibusdam
-                                    expedita magnam enim hic illum? Laudantium, deserunt?</p>
-                                <a href="https://leafwithf.netlify.app" target="_blank"
-                                    rel="noopener noreferrer"><span>Tipo do serviço</span>
-                                </a>
-                            </div>
+                <!-- <div class="project" onclick="openModal('projeto4')">
+                    <img src="imagem4.jpg" alt="Projeto 4">
+                </div>
+                <div class="project" onclick="openModal('projeto5')">
+                    <img src="imagem5.jpg" alt="Projeto 5">
+                </div>
+                <div class="project" onclick="openModal('projeto6')">
+                    <img src="imagem6.jpg" alt="Projeto 6">
+                </div> -->
+
+            </div>
+        </section>
+    
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <span class="category" id="modal-category"></span>
+                    <div class="buttons">
+                        <a id="details-btn" href="#" target="_blank">Detalhes</a>
+                        <button onclick="closeModal()">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Contato-->
+        <section id="contact" class="contato">
+            <div class="container-contato" data-aos="fade-up" data-aos-duration="1000">
+                <div class="headline-contato" data-aos="fade-up" data-aos-delay="200">
+                    <div class="titulo-contato">
+                        <h1>Contato</h1>
+                    </div>
+                    <div class="contact">
+                        <div class="contact-item">
+                            <div class="icon"><i class="bi bi-envelope"></i></div>
+                            <h3>E-mail</h3>
+                            <p><a href="mailto:rf7223216@gmail.com">rf7223216@gmail.com</a></p>
                         </div>
-                        <div class="imagens-case">
-                            <div class="slide">
-                                <i class="bi bi-chevron-left prev"></i>
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <img src="assets/img/imagem.png" alt="">
-                                <i class="bi bi-chevron-right next"></i>
-                            </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="bi bi-telephone"></i></div>
+                            <h3>Telefone</h3>
+                            <p><a href="tel:+5521968892704">(21) 96889-2704</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="bi bi-linkedin"></i></div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/rafa-fernandes" target="_blank"
+                                    rel="noopener noreferrer">@rafa-fernandes</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon"><i class="bi bi-github"></i></div>
+                            <h3>Github</h3>
+                            <p><a href="https://github.com/leafwithf" target="_blank"
+                                    rel="noopener noreferrer">@leafwithf</a></p>
                         </div>
                     </div>
-                    --> 
-
                 </div>
             </div>
         </section>
@@ -286,13 +268,6 @@
                         <a href="#portfolio">Portfolio</a>
                     </nav>
                 </div>
-                <div class="footer-column social-column">
-                    <ul class="social-links">
-                        <li><a href="https://www.instagram.com/folhaem_ingles"><i class="bi bi-instagram"></i> Instagram</a></li>
-                        <li><a href="https://github.com/leafwithf"><i class="bi bi-github"></i> GitHub</a></li>
-                        <li><a href="https://www.linkedin.com/in/rafa-fernandes-a9b944344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bi bi-linkedin"></i> LinkedIn</a></li>
-                    </ul>
-                </div>
             </div>
             <div class="footer-column credits-column">
                 <p>&copy; 2024 Todos os direitos reservados.</p>
@@ -306,12 +281,14 @@
     <script>
         AOS.init();
     </script>
-    
+
     <script src="assets/js/header.js"></script>
     <script src="assets/js/actionButton.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/slidePortfolio.js"></script>
     <script src="assets/js/inicial.js"></script>
+    <script src="assets/js/modalPortfolio.js"></script>
+
 
 </body>
 
