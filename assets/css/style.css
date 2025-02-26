@@ -5,9 +5,20 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Monocraft';
+    src: url('assets/fonts/Monocraft/Monocraft.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Monocraft', sans-serif;
+}
+
 /* CORES */
 :root {
-    --font-grande: 'Poppins', serif;
+    --font-grande: 'Monocraft', serif;
     --font-pequena: 'Montserrat', serif;
     --color-black: #000;
     --color-gray1: #3d4143;
@@ -344,7 +355,7 @@ header.visible,
     color: var(--color-white);
     font-size: 70px;
     font-weight: 700;
-    font-family: 'Poppins', serif;
+    font-family: var(--font-pequena);
     line-height: 1px;
     margin-left: 10%;
 }
@@ -353,9 +364,9 @@ header.visible,
     font-size: 25px;
     letter-spacing: 10px;
     margin-top: 1%;
-    margin-right: 0%;
+    margin-left: 3%;
     font-weight: 100;
-    font-family: 'Montserrat', serif;
+    font-family: var(--font-grande);
 }
 
 /* CTA */
@@ -407,7 +418,7 @@ header.visible,
 .cta span,
 .cta-scroll span {
     position: relative;
-    font-family: var(--font-pequena);
+    font-family: var(--font-grande);
     font-size: 18px;
     font-weight: 300;
     letter-spacing: 0.05em;
@@ -516,32 +527,6 @@ header.visible,
     }
 }
 
-.headline-scroll span {
-    font-family: var(--font-grande);
-    font-size: 5rem;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-}
-
-.headline-scroll .divisor {
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-gray2);
-    border-radius: 50%;
-    margin: 0 20px;
-}
-
-.headline-scroll .bold {
-    font-weight: bold;
-    color: var(--color-white);
-}
-
-.headline-scroll .light {
-    font-weight: lighter;
-    color: var(--color-gray2);
-}
-
 .conteudo-sobre {
     position: relative;
     top: 30%;
@@ -562,6 +547,7 @@ header.visible,
 }
 
 .data-about {
+    font-family: var(--font-pequena);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -574,6 +560,7 @@ header.visible,
 }
 
 .data-about h1 {
+    font-family: var(--font-pequena);
     font-size: 2rem;
     font-weight: bold;
     text-align: center;
@@ -901,6 +888,7 @@ header.visible,
 
 .project::after {
     content: attr(data-site);
+    font-family: var(--font-grande);
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -958,6 +946,7 @@ header.visible,
 }
 
 .modal-content {
+
     background: white;
     width: 90%;
     max-width: 800px;
