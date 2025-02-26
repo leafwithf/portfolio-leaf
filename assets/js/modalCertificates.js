@@ -46,19 +46,19 @@ const projects = {
 
 function openModal(projectId) {
     const project = projects[projectId];
-    
+
     if (project) {
         document.getElementById("modal-img").src = project.image;
         document.getElementById("modal-title").innerText = project.title;
         document.getElementById("modal-description").innerText = project.description;
         document.getElementById("modal-category").innerText = project.category;
-        document.getElementById("details-btn").href = project.link;
+        document.getElementById("certificates-btn").href = project.link;
 
-        document.getElementById("modal").style.display = "flex";
+        document.getElementById("modalC").style.display = "flex";
     }
 }
 
 function closeModal() {
-    document.getElementById("modal").style.display = "none";
+    document.getElementById("modalC").style.display = "none";
 }
 

@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Scroll suave para "Fale comigo"
+    // CTA "FALE COMIGO"
     document.getElementById("cta-contact").addEventListener("click", function () {
         document.getElementById("contact").scrollIntoView({
             behavior: "smooth"
         });
     });
-
-    // Scroll suave para "Role para baixo!"
+    
+    // CTA-SCROLL
     document.getElementById("cta-down").addEventListener("click", function () {
         document.getElementById("sobre").scrollIntoView({
             behavior: "smooth"

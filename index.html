@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+    <!-- LOGO -->
     <div id="tela-inicial">
         <img id="imagem" src="assets/img/logo.png" alt="Clique para iniciar">
     </div>
@@ -31,6 +31,8 @@
     </div>
 
     <!--HEADER-->
+    <!-- Diminuir o tamanho no mobile (img and size) e desktop -->
+     <!-- Deixar com um aspecto mais semelhante ao vidro -->
     <div class="container">
         <header class="header">
             <div class="logo">
@@ -52,7 +54,7 @@
                     <a href="#inicio">INÍCIO</a>
                     <a href="#sobre">SOBRE</a>
                     <a href="#portfolio">PORTFOLIO</a>
-                    <a href="#contato">CONTATO</a>
+                    <a href="#contact">CONTATO</a>
                     =
                 </nav>
             </div>
@@ -97,7 +99,7 @@
             </div>
         </main>
 
-        <!--Sobre-->
+        <!-- SOBRE -->
         <section id="sobre" class="sobre">
             <div class="container-sobre">
                 <div class="conteudo-sobre">
@@ -108,10 +110,11 @@
                                 Movido pela curiosidade, busco transformar ideias em experiências visuais cativantes,
                                 explorando novas formas de expressão. Este espaço reflete minha paixão pela inovação.
                             </p>
-                        <div class="data-about">
-                            <h1>02 Anos</h1>  
-                            <h1>04 projetos</h1>
-                        </div>
+                            <div class="data-about">
+                                <h1>02 Anos</h1>
+                                <h1>04 Projetos</h1>
+                            </div>
+                            <!-- Adicionar uma animação SVG no icone download -->
                             <div class="download-about">
                                 <a href="assets/documents/Currículo-Rafa.pdf" download="Currículo-Rafa.pdf"> Currículo
                                     <i class="bi bi-download"></i>
@@ -128,13 +131,80 @@
             </div>
         </section>
 
-        <!--Skills-->
+        <!-- CERTIFICATES -->
+        <!-- Adicionar certificados do tamanho dos icones e após clicado ira abrir o modal com opção de ver a imagem em tamanho maior -->
+        <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container-certficates">
+                <div class="headline-certficates">
+                    <div class="text-headline-certficates" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-duration="1000">
+                        <h2>
+                            Meus Certificados
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestias libero
+                            consequuntur.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="project" onclick="openModal('portfolio')" data-site="Portfólio">
+                        <img src="assets/img/sites/index-pt.png" alt="Projeto 1">
+                    </div>
+                    <div class="project" onclick="openModal('projeto-fotos')" data-site="LeafWithF">
+                        <img src="assets/img/sites/index-ft.png" alt="Projeto 2">
+                    </div>
+                    <div class="project" onclick="openModal('mia')" data-site="M.I.A.">
+                        <img src="assets/img/sites/index-mia.png" alt="Projeto 3">
+                    </div>
+                </div>
+                <div class="content-certficates">
+                    <div class="box-certficates" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+                        <div class="certficates-container">
+                            <div class="certficate"><i class="bi bi-filetype-html"></i> HTML5</div>
+                            <div class="certficate"><i class="bi bi-filetype-css"></i> CSS3</div>
+                            <div class="certficate"><i class="bi bi-filetype-js"></i> JavaScript</div>
+                            <div class="certficate"><i class="bi bi-filetype-ts"></i> Typecript</div>
+                            <div class="certficate"><i class="bi bi-filetype-jsx"></i> React.js</div>
+                            <div class="certficate"><i class="bi bi-filetype-jsx"></i> Node.js</div>
+                            <div class="certficate"><i class="bi bi-bezier"></i> Figma</div>
+                            <div class="certficate"><i class="bi bi-pyhton"></i> Python</div>
+                            <div class="certficate"><i class="bi bi-adobe"></i> Photoshop</div>
+                            <div class="certficate"><i class="bi bi-pyhton"></i> Ilustrator</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MODAL CERTIFICATES -->
+        <div id="modalC" class="modal">
+            <div class="modal-content">
+                <img id="modal-img" src="" alt="">
+                <div class="modal-info">
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <span class="category" id="modal-category"></span>
+                    <div class="buttons">
+                        <a id="certificates-btn" href="#" target="_blank">Detalhes</a>
+                        <button onclick="closeModal()">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--SKILLS-->
+        <!-- Abaixo das skills, adicionar Ingles e Alemão mas contudo, eles nao estarão dentro das columns dsas skils apenas dentro do border onde ficam -->
         <section id="skills" class="skills" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-skills">
                 <div class="headline-skills">
                     <div class="text-headline-skills" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <h2>Minhas Skills</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestias libero consequuntur.
+                        <h2>
+                            Minhas Habilidades
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestias libero
+                            consequuntur.
                         </p>
                     </div>
                 </div>
@@ -142,69 +212,76 @@
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="skills-container">
                             <div class="skill"><i class="bi bi-filetype-html"></i> HTML5</div>
-                            <div class="skill"><i class="bi bi-filetype-css"></i>  CSS3</div>
-                            <div class="skill"><i class="bi bi-filetype-js"></i>   JavaScript</div>
-                            <div class="skill"><i class="bi bi-filetype-ts"></i>   TypeScript</div>
-                            <div class="skill"><i class="bi bi-filetype-jsx"></i>  React.js</div>
-                            <div class="skill"><i class="bi bi-filetype-jsx"></i>  Node.js</div>
-                            <div class="skill"><i class="bi bi-bezier"></i>        Figma</div>
-                            <div class="skill"><i class="bi bi-pyhton"></i>        Python</div>
-                            <div class="skill"><i class="bi bi-adobe"></i>         Photoshop</div>
-                            <div class="skill"><i class="bi bi-pyhton"></i>        Ilustrator</div>
+                            <div class="skill"><i class="bi bi-filetype-css"></i> CSS3</div>
+                            <div class="skill"><i class="bi bi-filetype-js"></i> JavaScript</div>
+                            <div class="skill"><i class="bi bi-filetype-ts"></i> TypeScript</div>
+                            <div class="skill"><i class="bi bi-filetype-jsx"></i> React.js</div>
+                            <div class="skill"><i class="bi bi-filetype-jsx"></i> Node.js</div>
+                            <div class="skill"><i class="bi bi-bezier"></i> Figma</div>
+                            <div class="skill"><i class="bi bi-pyhton"></i> Python</div>
+                            <div class="skill"><i class="bi bi-adobe"></i> Photoshop</div>
+                            <div class="skill"><i class="bi bi-pyhton"></i> Ilustrator</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!--Frase -->
+        <!-- FRASE -->
+        <!-- Diminuir um pouco o tamanho dela -->
         <section id="free-your-mind" class="free-your-mind">
             <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
                 <div class="line-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span> HESITAÇÃO </span>
+                    <span>
+                        HESITAÇÃO
+                    </span>
                     <span class="line"></span>
                 </div>
                 <div class="line-container center" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <span class="line"></span>
-                    <span> É A </span>
+                    <span>
+                        É A
+                    </span>
                     <span class="line"></span>
                 </div>
                 <div class="line-container right" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                     <span class="line"></span>
-                    <span> DERROTA </span>
+                    <span>
+                        DERROTA
+                    </span>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio">
-            <h2>Confira alguns projetos realizados</h2>
-            <p>Você pode também conferir nas redes sociais aqui disponibilizadas</p>
-    
-            <div class="grid">
-                <div class="project" onclick="openModal('portfolio')">
-                    <img src="assets/img/MIA/index-mia.png" alt="Projeto 1">
+        <!-- PORTFÓLIO -->
+        <!-- Aumentar um pouco a parte de baixo e fazer um mini degrade para transição de cores -->
+        <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+                <div class="headline-portfolio">
+                    <h1 class="title">
+                        Portfólio
+                    </h1>
+                    <span class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consequuntur odit, dolorem
+                        architecto optio vitae perspiciatis!
+                    </span>
                 </div>
-                <div class="project" onclick="openModal('projeto-fotos')">
-                    <img src="assets/img/prFT/index-ft.png" alt="Projeto 2">
+                <div class="grid">
+                    <div class="project" onclick="openModal('portfolio')" data-site="Portfólio">
+                        <img src="assets/img/sites/index-pt.png" alt="Projeto 1">
+                    </div>
+                    <div class="project" onclick="openModal('projeto-fotos')" data-site="LeafWithF">
+                        <img src="assets/img/sites/index-ft.png" alt="Projeto 2">
+                    </div>
+                    <div class="project" onclick="openModal('mia')" data-site="M.I.A.">
+                        <img src="assets/img/sites/index-mia.png" alt="Projeto 3">
+                    </div>
                 </div>
-                <div class="project" onclick="openModal('mia')">
-                    <img src="assets/img/prFT/index-ft.png" alt="Projeto 3">
-                </div>
-
-                <!-- <div class="project" onclick="openModal('projeto4')">
-                    <img src="imagem4.jpg" alt="Projeto 4">
-                </div>
-                <div class="project" onclick="openModal('projeto5')">
-                    <img src="imagem5.jpg" alt="Projeto 5">
-                </div>
-                <div class="project" onclick="openModal('projeto6')">
-                    <img src="imagem6.jpg" alt="Projeto 6">
-                </div> -->
 
             </div>
         </section>
-    
-        <!-- Modal -->
+
+        <!-- MODAL  PORTFOLIO-->
         <div id="modal" class="modal">
             <div class="modal-content">
                 <img id="modal-img" src="" alt="">
@@ -220,7 +297,7 @@
             </div>
         </div>
 
-        <!--Contato-->
+        <!--CONTATO-->
         <section id="contact" class="contato">
             <div class="container-contato" data-aos="fade-up" data-aos-duration="1000">
                 <div class="headline-contato" data-aos="fade-up" data-aos-delay="200">
@@ -234,9 +311,9 @@
                             <p><a href="mailto:rf7223216@gmail.com">rf7223216@gmail.com</a></p>
                         </div>
                         <div class="contact-item">
-                            <div class="icon"><i class="bi bi-telephone"></i></div>
-                            <h3>Telefone</h3>
-                            <p><a href="tel:+5521968892704">(21) 96889-2704</a></p>
+                            <div class="icon"><i class="bi bi-instagram"></i></div>
+                            <h3>Instagram</h3>
+                            <p><a href="https://www.linkedin.com/in/rafa-fernandes">@leafwithf</a></p>
                         </div>
                         <div class="contact-item">
                             <div class="icon"><i class="bi bi-linkedin"></i></div>
@@ -255,7 +332,7 @@
             </div>
         </section>
 
-        <!--Footer-->
+        <!--FOOTER-->
         <footer class="footer" id="footer">
             <div class="container-footer">
                 <div class="footer-column logo-column">
@@ -265,6 +342,7 @@
                     <nav class="footer-nav">
                         <a href="#inicio">Início</a>
                         <a href="#sobre">Sobre</a>
+                        <a href="#skills">Habilidades</a>
                         <a href="#portfolio">Portfolio</a>
                     </nav>
                 </div>
@@ -285,9 +363,9 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/actionButton.js"></script>
     <script src="assets/js/menu.js"></script>
-    <script src="assets/js/slidePortfolio.js"></script>
     <script src="assets/js/inicial.js"></script>
     <script src="assets/js/modalPortfolio.js"></script>
+    <script src="assets/js/modalCertificates.js"></script>
 
 
 </body>
