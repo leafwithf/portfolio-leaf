@@ -5,20 +5,9 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: 'Monocraft';
-    src: url('assets/fonts/Monocraft/Monocraft.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-body {
-    font-family: 'Monocraft', sans-serif;
-}
-
 /* CORES */
 :root {
-    --font-grande: 'Monocraft', serif;
+    --font-grande: 'Poppins', serif;
     --font-pequena: 'Montserrat', serif;
     --color-black: #000;
     --color-gray1: #3d4143;
