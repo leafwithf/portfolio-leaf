@@ -8,6 +8,7 @@
     <link rel="icon" href="assets/img/logoic.ico" type="icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">
+    <link rel="stylesheet" href="assets/css/darkMode.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +21,7 @@
 </head>
 
 <body>
-    <!-- LOGO -->
-    <div id="tela-inicial">
-        <img id="imagem" src="assets/img/logo.png" alt="Clique para iniciar">
-    </div>
+
 
     <!-- BACK-TO-TOP -->
     <div id="backToTop" class="fixed-button">
@@ -31,13 +29,19 @@
     </div>
 
     <!--HEADER-->
-    <!-- Diminuir o tamanho no mobile (img and size) e desktop -->
-    <!-- Deixar com um aspecto mais semelhante ao vidro -->
+    <!-- Diminuir o tamanho no mobile (img and size) -->
     <div class="container">
         <header class="header">
             <div class="logo">
                 <img src="assets/img/logo.png" alt="">
             </div>
+
+            <!-- BLACK/LIGHT MODE -->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+
             <div class="menu">
                 <label class="hamburger">
                     <input type="checkbox" id="menuToggle">
@@ -55,7 +59,6 @@
                     <a href="#sobre">SOBRE</a>
                     <a href="#portfolio">PORTFOLIO</a>
                     <a href="#contact">CONTATO</a>
-                    =
                 </nav>
             </div>
         </header>
@@ -112,10 +115,7 @@
                             </p>
                             <div class="data-about">
                                 <h1>02 Anos</h1>
-                                <h1>04 Projetos</h1>
                             </div>
-
-                            <!-- Adicionar uma animação SVG no icone download -->
                             <div class="download-about">
                                 <a href="assets/documents/Currículo-Rafa.pdf" download="Currículo-Rafa.pdf"> Currículo
                                     <i class="bi bi-download"></i>
@@ -133,68 +133,61 @@
         </section>
 
         <!-- CERTIFICATES -->
-        <!-- Adicionar certificados do tamanho dos icones e após clicado ira abrir o modal com opção de ver a imagem em tamanho maior -->
         <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-certficates">
                 <div class="headline-certficates">
                     <div class="text-headline-certficates" data-aos="fade-up" data-aos-delay="200"
                         data-aos-duration="1000">
-                        <h2>
-                            Meus Certificados
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestias libero
-                            consequuntur.
+                        <h2>Meus Certificados</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga molestias libero consequuntur.
                         </p>
                     </div>
                 </div>
-                <div class="grid">
-                    <div class="project" onclick="openModal('portfolio')" data-site="Portfólio">
-                        <img src="assets/img/sites/index-pt.png" alt="Projeto 1">
+                <div class="grid-certificates">
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
                     </div>
-                    <div class="project" onclick="openModal('projeto-fotos')" data-site="LeafWithF">
-                        <img src="assets/img/sites/index-ft.png" alt="Projeto 2">
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
                     </div>
-                    <div class="project" onclick="openModal('mia')" data-site="M.I.A.">
-                        <img src="assets/img/sites/index-mia.png" alt="Projeto 3">
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
                     </div>
-                </div>
-                <div class="content-certficates">
-                    <div class="box-certficates" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="certficates-container">
-                            <div class="certficate"><i class="bi bi-filetype-html"></i> HTML5</div>
-                            <div class="certficate"><i class="bi bi-filetype-css"></i> CSS3</div>
-                            <div class="certficate"><i class="bi bi-filetype-js"></i> JavaScript</div>
-                            <div class="certficate"><i class="bi bi-filetype-ts"></i> Typecript</div>
-                            <div class="certficate"><i class="bi bi-filetype-jsx"></i> React.js</div>
-                            <div class="certficate"><i class="bi bi-filetype-jsx"></i> Node.js</div>
-                            <div class="certficate"><i class="bi bi-bezier"></i> Figma</div>
-                            <div class="certficate"><i class="bi bi-pyhton"></i> Python</div>
-                            <div class="certficate"><i class="bi bi-adobe"></i> Photoshop</div>
-                            <div class="certficate"><i class="bi bi-pyhton"></i> Ilustrator</div>
-                        </div>
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('css3')" data-site="CSS3">
+                        <img src="assets/img/certificates/css3.jpg" alt="Certificado CSS3">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- MODAL CERTIFICATES -->
-        <!-- Alterar para torna-lo unico ao CERTIFICADES -->
+       <!-- MODAL -->
+<div id="certificateModal" class="certficateModal">
+    <div class="modalCertificate-content">
+        <span class="closeCertificate" onclick="closeModal()">&times;</span>
+        <h3>Visualize seu Certificado</h3>
+        <p><strong>Certificado Selecionado:</strong></p>
+        <img id="modalCertificateImage" class="modalCertificate-image" alt="Imagem do certificado" />
+        <div id="captionCertificate"></div>
+        <div class="buttonsCertificate">
+            <button onclick="viewDetails()">Detalhes</button>
+        </div>
+    </div>
+</div>
 
-        <!-- <div id="modalC" class="modal">
-            <div class="modal-content">
-                <img id="modal-img" src="" alt="">
-                <div class="modal-info">
-                    <h3 id="modal-title"></h3>
-                    <p id="modal-description"></p>
-                    <span class="category" id="modal-category"></span>
-                    <div class="buttons">
-                        <a id="certificates-btn" href="#" target="_blank">Detalhes</a>
-                        <button onclick="closeModal()">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div> -->
+
+
 
         <!--SKILLS-->
         <!-- Abaixo das skills, adicionar Ingles e Alemão mas contudo, eles nao estarão dentro das columns dsas skils apenas dentro do border onde ficam -->
@@ -280,7 +273,6 @@
                         <img src="assets/img/sites/index-mia.png" alt="Projeto 3">
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -363,12 +355,12 @@
         AOS.init();
     </script>
 
-    <script src="assets/js/header.js"></script>
     <script src="assets/js/actionButton.js"></script>
+    <script src="assets/js/header.js"></script>
     <script src="assets/js/menu.js"></script>
-    <script src="assets/js/inicial.js"></script>
     <script src="assets/js/modalPortfolio.js"></script>
     <script src="assets/js/modalCertificates.js"></script>
+    <script src="assets/js/darkMode.js"></script>
 
 
 </body>
