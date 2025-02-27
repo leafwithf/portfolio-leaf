@@ -13,6 +13,7 @@
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -37,6 +38,7 @@
             </div>
 
             <!-- BLACK/LIGHT MODE -->
+             <!-- Reorganizar sobre a questão das cores e suas divisões -->
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider"></span>
@@ -133,6 +135,7 @@
         </section>
 
         <!-- CERTIFICATES -->
+         <!-- Centralizar os certificados(Modal) e adicionar os verdadeiros, colocar o index em nivel maior -->
         <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-certficates">
                 <div class="headline-certficates">
@@ -172,22 +175,16 @@
             </div>
         </section>
 
-       <!-- MODAL -->
-<div id="certificateModal" class="certficateModal">
-    <div class="modalCertificate-content">
-        <span class="closeCertificate" onclick="closeModal()">&times;</span>
-        <h3>Visualize seu Certificado</h3>
-        <p><strong>Certificado Selecionado:</strong></p>
-        <img id="modalCertificateImage" class="modalCertificate-image" alt="Imagem do certificado" />
-        <div id="captionCertificate"></div>
-        <div class="buttonsCertificate">
-            <button onclick="viewDetails()">Detalhes</button>
+        <!-- MODAL CERTIFICATES -->
+        <div id="certificateModal" class="certficateModal">
+            <div class="modalCertificate-content">
+                <span class="closeCertificate" onclick="closeModal()">&times;</span>
+                <h3>Visualize seu Certificado</h3>
+                <p><strong>Certificado Selecionado:</strong></p>
+                <img id="modalCertificateImage" class="modalCertificate-image" alt="Imagem do certificado" />
+                <div id="captionCertificate"></div>
+            </div>
         </div>
-    </div>
-</div>
-
-
-
 
         <!--SKILLS-->
         <!-- Abaixo das skills, adicionar Ingles e Alemão mas contudo, eles nao estarão dentro das columns dsas skils apenas dentro do border onde ficam -->
@@ -250,7 +247,7 @@
         </section>
 
         <!-- PORTFÓLIO -->
-        <!-- Aumentar um pouco a parte de baixo e fazer um mini degrade para transição de cores -->
+         <!-- Colocar o modal do index em nivel maior -->
         <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
             <div>
                 <div class="headline-portfolio">
@@ -263,34 +260,39 @@
                     </span>
                 </div>
                 <div class="grid">
-                    <div class="project" onclick="openModal('portfolio')" data-site="Portfólio">
+                    <div class="projectPortfolio" onclick="openModalPortfolio('portfolio')" data-site="Portfólio">
                         <img src="assets/img/sites/index-pt.png" alt="Projeto 1">
                     </div>
-                    <div class="project" onclick="openModal('projeto-fotos')" data-site="LeafWithF">
+                    <div class="projectPortfolio" onclick="openModalPortfolio('projeto-fotos')" data-site="LeafWithF">
                         <img src="assets/img/sites/index-ft.png" alt="Projeto 2">
                     </div>
-                    <div class="project" onclick="openModal('mia')" data-site="M.I.A.">
+                    <div class="projectPortfolio" onclick="openModalPortfolio('mia')" data-site="M.I.A.">
                         <img src="assets/img/sites/index-mia.png" alt="Projeto 3">
                     </div>
+                    
                 </div>
             </div>
         </section>
 
-        <!-- MODAL  PORTFOLIO-->
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <img id="modal-img" src="" alt="">
-                <div class="modal-info">
-                    <h3 id="modal-title"></h3>
-                    <p id="modal-description"></p>
-                    <span class="category" id="modal-category"></span>
-                    <div class="buttons">
-                        <a id="details-btn" href="#" target="_blank">Detalhes</a>
-                        <button onclick="closeModal()">Fechar</button>
-                    </div>
+      <!-- MODAL PORTFÓLIO -->
+      <div id="modal-portfolio" class="modalPortfolio">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModalPortfolio()" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <img id="modal-img" src="" alt="Imagem do Projeto">
+            <div class="modal-info">
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+                <span class="category" id="modal-category"></span>
+                <div class="buttons">
+                    <a id="details-btn" href="#" target="_blank" class="btn">Acessar projeto</a>
+                    <a id="repo-btn" href="#" target="_blank" class="btn">Acessar repositório</a>
                 </div>
             </div>
         </div>
+    </div>
+
 
         <!--CONTATO-->
         <section id="contact" class="contato">
@@ -313,7 +315,7 @@
                         <div class="contact-item">
                             <div class="icon"><i class="bi bi-linkedin"></i></div>
                             <h3>LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/rafa-fernandes" target="_blank"
+                            <p><a href="https://www.linkedin.com/in/rafa-fernandes-a9b944344/" target="_blank"
                                     rel="noopener noreferrer">@rafa-fernandes</a></p>
                         </div>
                         <div class="contact-item">
@@ -328,6 +330,7 @@
         </section>
 
         <!--FOOTER-->
+        <!-- Arrumar a quebra de linha -->
         <footer class="footer" id="footer">
             <div class="container-footer">
                 <div class="footer-column logo-column">
@@ -344,6 +347,7 @@
             </div>
             <div class="footer-column credits-column">
                 <p>&copy; 2024 Todos os direitos reservados.</p>
+                <br>
                 <p>Desenvolvido por Raffa.</p>
             </div>
         </footer>

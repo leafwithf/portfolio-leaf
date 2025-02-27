@@ -21,7 +21,3 @@ function closeModal() {
     var modal = document.getElementById('certificateModal');
     modal.style.display = 'none';
 }
-
-function viewDetails() {
-    alert("Detalhes do certificado!");
-}

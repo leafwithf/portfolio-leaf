@@ -767,7 +767,6 @@ input:checked+.slider:before {
     z-index: 15;
 }
 
-/* Centralizando o conteúdo do modal */
 .modalCertificate-content {
     background: white;
     width: 90%;
@@ -778,7 +777,7 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative; /* Para o ícone de fechar ficar posicionado corretamente */
+    position: relative;
 }
 
 .modalCertificate-content img {
@@ -788,7 +787,6 @@ input:checked+.slider:before {
     border-radius: 15px;
 }
 
-/* Estilo dos botões */
 .buttonsCertificate {
     display: flex;
     justify-content: space-between;
@@ -812,7 +810,6 @@ input:checked+.slider:before {
     background: #333;
 }
 
-/* Ícone de fechar */
 .closeCertificate {
     position: absolute;
     top: 10px;
@@ -997,29 +994,29 @@ input:checked+.slider:before {
     margin: auto;
 }
 
-.project {
+.projectPortfolio {
     border-radius: 20px;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
 
 }
 
-.project img {
+.projectPortfolio img {
     width: 100%;
     height: 100%;
     cursor: pointer;
     transition: 0.3s;
 }
 
-.project img:hover {
+.projectPortfolio img:hover {
     opacity: 0.7;
 }
 
-.project {
+.projectPortfolio {
     position: relative;
     overflow: hidden;
 }
 
-.project::after {
+.projectPortfolio::after {
     content: attr(data-site);
     font-family: var(--font-grande);
     position: absolute;
@@ -1036,7 +1033,7 @@ input:checked+.slider:before {
     pointer-events: none;
 }
 
-.project:hover::after {
+.projectPortfolio:hover::after {
     opacity: 1;
 }
 
@@ -1064,8 +1061,8 @@ input:checked+.slider:before {
     letter-spacing: 1.5px;
 }
 
-/* MODAL */
-.modal {
+/* MODAL PORTFOLIO */
+#modal-portfolio {
     display: none;
     position: fixed;
     top: 0;
@@ -1077,61 +1074,77 @@ input:checked+.slider:before {
     align-items: center;
     z-index: 15;
 }
-
 .modal-content {
-
-    background: white;
+    position: relative;
+    background: #18181b;
     width: 90%;
-    max-width: 800px;
-    padding: 20px 10px 50px 10px;
-    border-radius: 20px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
     text-align: left;
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
 .modal-content img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .modal-info {
-    padding: 10px;
+    padding: 15px;
+    text-align: center;
 }
 
 .modal-info h3 {
-    margin: 10px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.modal-info p {
+    font-size: 16px;
+    color: #cbd5e1;
+    margin: 10px 0;
 }
 
 .category {
     font-size: 14px;
-    color: #000000;
+    font-weight: bold;
+    color: #e0e0e0;
 }
 
 .buttons {
+    margin-top: 15px;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.buttons a,
-.buttons button {
-    text-decoration: none;
-    background: black;
-    color: white;
-    padding: 10px;
+.btn:hover {
+    background: #252525;
+}
+
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
     border: none;
-    border-radius: 15px;
+    font-size: 24px;
+    color: white;
     cursor: pointer;
-    flex: 1;
-    margin: 5px;
-    text-align: center;
 }
 
-.buttons a:hover,
-.buttons button:hover {
-    background: #333;
+.close-modal:hover {
+    color: #e40606; 
+}
+.close-modal i {
+    color: white;
 }
 
 /* CONTATO  */
