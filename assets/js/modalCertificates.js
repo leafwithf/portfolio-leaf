@@ -1,5 +1,5 @@
 function openModal(certificate) {
-    var modal = document.getElementById('certificateModal');
+    var modal = document.getElementById('modal-certificate');
     var modalImage = document.getElementById('modalCertificateImage');
     var caption = document.getElementById('captionCertificate');
 
@@ -13,11 +13,10 @@ function openModal(certificate) {
     if (images[certificate]) {
         modalImage.src = images[certificate];
         caption.innerHTML = certificate.toUpperCase();
-        modal.style.display = 'block';
-    }
+        modal.style.display = 'flex'; 
+       }
 }
 
-function closeModal() {
-    var modal = document.getElementById('certificateModal');
-    modal.style.display = 'none';
+function closeModalCertificate() {
+    document.getElementById("modal-certificate").style.display = "none";
 }

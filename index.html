@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="google5cce857881be0ece" />
-    <link rel="icon" href="assets/img/logoic.ico" type="icon">
+    <link rel="icon" href="assets/favicon/logoic.ico" type="icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">
     <link rel="stylesheet" href="assets/css/darkMode.css">
@@ -23,7 +23,6 @@
 
 <body>
 
-
     <!-- BACK-TO-TOP -->
     <div id="backToTop" class="fixed-button">
         <i class="bi bi-chevron-up"></i>
@@ -38,7 +37,7 @@
             </div>
 
             <!-- BLACK/LIGHT MODE -->
-             <!-- Reorganizar sobre a questão das cores e suas divisões -->
+            <!-- Reorganizar sobre a questão das cores e suas divisões -->
             <label class="switch">
                 <input type="checkbox">
                 <span class="slider"></span>
@@ -88,10 +87,6 @@
                     <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
                         id="cta-contact">
                         <span>Fale comigo</span>
-                        <svg width="15px" height="10px" viewBox="0 0 13 10">
-                            <path d="M1,5 L11,5"></path>
-                            <polyline points="8 1 12 5 8 9"></polyline>
-                        </svg>
                     </button>
 
                     <!-- CTA SCROLL -->
@@ -115,11 +110,8 @@
                                 Movido pela curiosidade, busco transformar ideias em experiências visuais cativantes,
                                 explorando novas formas de expressão. Este espaço reflete minha paixão pela inovação.
                             </p>
-                            <div class="data-about">
-                                <h1>02 Anos</h1>
-                            </div>
                             <div class="download-about">
-                                <a href="assets/documents/Currículo-Rafa.pdf" download="Currículo-Rafa.pdf"> Currículo
+                                <a href="assets/documents/Currículo-Rafa.pdf" download="Currículo-Rafa.pdf"> Download CV
                                     <i class="bi bi-download"></i>
                                 </a>
                             </div>
@@ -135,7 +127,7 @@
         </section>
 
         <!-- CERTIFICATES -->
-         <!-- Centralizar os certificados(Modal) e adicionar os verdadeiros, colocar o index em nivel maior -->
+        <!-- Adicionar os verdadeiros -->
         <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-certficates">
                 <div class="headline-certficates">
@@ -176,18 +168,19 @@
         </section>
 
         <!-- MODAL CERTIFICATES -->
-        <div id="certificateModal" class="certficateModal">
+        <div id="modal-certificate" class="modalCertificate">
             <div class="modalCertificate-content">
-                <span class="closeCertificate" onclick="closeModal()">&times;</span>
-                <h3>Visualize seu Certificado</h3>
-                <p><strong>Certificado Selecionado:</strong></p>
+                <button class="close-certificate" onclick="closeModalCertificate()" aria-label="Fechar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <br>
                 <img id="modalCertificateImage" class="modalCertificate-image" alt="Imagem do certificado" />
+                <br>
                 <div id="captionCertificate"></div>
             </div>
         </div>
 
         <!--SKILLS-->
-        <!-- Abaixo das skills, adicionar Ingles e Alemão mas contudo, eles nao estarão dentro das columns dsas skils apenas dentro do border onde ficam -->
         <section id="skills" class="skills" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-skills">
                 <div class="headline-skills">
@@ -204,24 +197,68 @@
                 <div class="content-skills">
                     <div class="box-skills" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                         <div class="skills-container">
-                            <div class="skill"><i class="bi bi-filetype-html"></i> HTML5</div>
-                            <div class="skill"><i class="bi bi-filetype-css"></i> CSS3</div>
-                            <div class="skill"><i class="bi bi-filetype-js"></i> JavaScript</div>
-                            <div class="skill"><i class="bi bi-filetype-ts"></i> TypeScript</div>
-                            <div class="skill"><i class="bi bi-filetype-jsx"></i> React.js</div>
-                            <div class="skill"><i class="bi bi-filetype-jsx"></i> Node.js</div>
-                            <div class="skill"><i class="bi bi-bezier"></i> Figma</div>
-                            <div class="skill"><i class="bi bi-pyhton"></i> Python</div>
-                            <div class="skill"><i class="bi bi-adobe"></i> Photoshop</div>
-                            <div class="skill"><i class="bi bi-pyhton"></i> Ilustrator</div>
+                            <div class="skill">
+                                <img src="assets/img/svg/html5.svg" alt="HTML5" width="40" height="40">
+                                HTML5
+                            </div>
+                            <div class="skill">
+                                <img src="assets/img/svg/css3.svg" alt="CSS3" width="40" height="40">
+                                CSS3
+                            </div>
+                            <div class="skill">
+                                <img src="assets/img/svg/javascript.svg" alt="JavaScript" width="40" height="40">
+                                JavaScript
+                            </div>
+                            <!-- <div class="skill">
+                                <img src="assets/img/svg/typescript.svg" alt="TypeScript" width="40" height="40">
+                                TypeScript
+                            </div> -->
+                            <div class="skill">
+                                <img src="assets/img/svg/react.svg" alt="React.js" width="40" height="40">
+                                React.js
+                            </div>
+                            <div class="skill">
+                                <img src="assets/img/svg/nodejs.svg" alt="Node.js" width="40" height="40">
+                                Node.js
+                            </div>
+                            <div class="skill">
+                                <img src="assets/img/svg/figma.svg" alt="Figma" width="40" height="40">
+                                Figma
+                            </div>
+                            <div class="skill">
+                                <img src="assets/img/svg/python.svg" alt="Python" width="40" height="40">
+                                Python
+                            </div>
+                            <div class="skill">
+                                <img src="assets/img/svg/photoshop.svg" alt="Photoshop" width="40" height="40">
+                                Photoshop
+                            </div>
+                            <div class="skill">
+                                <img src="assets/img/svg/illustrator.svg" alt="Illustrator" width="40" height="40">
+                                Illustrator
+                            </div>
+                        </div>
+
+                        <!-- LANGUAGES -->
+                        <div class="languages-container">
+                            <div class="icon-language">
+                                <img src="assets/img/svg/Brasil.svg" alt="Brasil" width="60" height="60">
+                                Português
+                            </div>
+                            <div class="icon-language">
+                                <img src="assets/img/svg/Deustch.svg" alt="Alemanha" width="60" height="60">
+                                Alemão
+                            </div>
+                            <div class="icon-language">
+                                <img src="assets/img/svg/English.svg" alt="Estados Unidos" width="60" height="60">
+                                Inglês
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
-        <!-- FRASE -->
-        <!-- Diminuir um pouco o tamanho dela -->
+        <!-- FREE YOUR MIND -->
         <section id="free-your-mind" class="free-your-mind">
             <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
                 <div class="line-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -247,7 +284,6 @@
         </section>
 
         <!-- PORTFÓLIO -->
-         <!-- Colocar o modal do index em nivel maior -->
         <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
             <div>
                 <div class="headline-portfolio">
@@ -255,44 +291,50 @@
                         Portfólio
                     </h1>
                     <span class="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere consequuntur odit, dolorem
-                        architecto optio vitae perspiciatis!
+                        Confira meus projetos mais recentes! Aqui você vai ver como aplico minhas habilidades em
+                        desenvolvimento web e design de interfaces, sempre criando soluções inovadoras e empolgantes
                     </span>
                 </div>
                 <div class="grid">
                     <div class="projectPortfolio" onclick="openModalPortfolio('portfolio')" data-site="Portfólio">
-                        <img src="assets/img/sites/index-pt.png" alt="Projeto 1">
+                        <img src="assets/img/sitesfts/PT/index-pt.png" alt="Projeto 1">
                     </div>
                     <div class="projectPortfolio" onclick="openModalPortfolio('projeto-fotos')" data-site="LeafWithF">
-                        <img src="assets/img/sites/index-ft.png" alt="Projeto 2">
+                        <img src="assets/img/sitesfts/prFT/capa-ft.png" alt="Projeto 2">
                     </div>
                     <div class="projectPortfolio" onclick="openModalPortfolio('mia')" data-site="M.I.A.">
-                        <img src="assets/img/sites/index-mia.png" alt="Projeto 3">
+                        <img src="assets/img/sitesfts/MIA/index-mia.png" alt="Projeto 3">
                     </div>
-                    
+                    <div class="projectPortfolio" onclick="openModalPortfolio('vidloader')" data-site="VidLoader">
+                        <img src="assets/img/sitesfts/MIA/index-mia.png" alt="Projeto 4">
+                    </div>
                 </div>
             </div>
         </section>
 
-      <!-- MODAL PORTFÓLIO -->
-      <div id="modal-portfolio" class="modalPortfolio">
-        <div class="modal-content">
-            <button class="close-modal" onclick="closeModalPortfolio()" aria-label="Fechar">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-            <img id="modal-img" src="" alt="Imagem do Projeto">
-            <div class="modal-info">
-                <h3 id="modal-title"></h3>
-                <p id="modal-description"></p>
-                <span class="category" id="modal-category"></span>
-                <div class="buttons">
-                    <a id="details-btn" href="#" target="_blank" class="btn">Acessar projeto</a>
-                    <a id="repo-btn" href="#" target="_blank" class="btn">Acessar repositório</a>
+        <!-- MODAL PORTFÓLIO -->
+        <div id="modal-portfolio" class="modalPortfolio">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeModalPortfolio()" aria-label="Fechar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <br>
+                <img id="modal-img" src="" alt="Imagem do Projeto">
+                <div class="modal-info">
+                    <div id="modal-technologies" class="modal-technologies"></div>
+                    <br>
+                    <h3 id="modal-title"></h3>
+                    <p id="modal-description"></p>
+                    <span class="category" id="modal-category"></span>
+                    <br>
+                    <br>
+                    <div class="buttons">
+                        <a id="details-btn" href="#" target="_blank" class="btn">Acessar projeto</a>
+                        <a id="repo-btn" href="#" target="_blank" class="btn">Acessar repositório</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
 
         <!--CONTATO-->
         <section id="contact" class="contato">
@@ -330,7 +372,6 @@
         </section>
 
         <!--FOOTER-->
-        <!-- Arrumar a quebra de linha -->
         <footer class="footer" id="footer">
             <div class="container-footer">
                 <div class="footer-column logo-column">
@@ -346,15 +387,15 @@
                 </div>
             </div>
             <div class="footer-column credits-column">
-                <p>&copy; 2024 Todos os direitos reservados.</p>
-                <br>
-                <p>Desenvolvido por Raffa.</p>
+                <span>&copy; 2024 Todos os direitos reservados. Desenvolvido por Raffa.</span>
             </div>
+
         </footer>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
         AOS.init();
     </script>
@@ -366,7 +407,5 @@
     <script src="assets/js/modalCertificates.js"></script>
     <script src="assets/js/darkMode.js"></script>
 
-
 </body>
-
 </html>
