@@ -535,22 +535,6 @@ header.visible,
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
 }
 
-
-@keyframes downloadAnimation {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(5px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
 .headline-sobre {
     height: 30%;
     width: 100vw;

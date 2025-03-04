@@ -1,197 +1,257 @@
 @media (max-width: 1024px) {
-
-    #imagem {
-        width: 120px;
-    }
-    .logo-inicio {
-        width: 100%;
-        height: 100%;
-       
-    }
-    
-    .logo-inicio img {
-        content: url('../../assets/img/logo.png'); 
-        transform: translateX(140%) translateY(-90%);/* Nova imagem para telas menores */
-    }
-    .surname-inicio{
-        margin-right: 5%;
-    }
-      
     .container {
-        padding: 0;
+        max-width: 100%;
+        padding: 0 1rem;
     }
-    
 
-    /************************** SOBRE ***/
+    .header {
+        padding: 0.8rem 1rem;
+    }
+
+    .logo {
+        left: 0px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .nav-menu a {
+        font-size: 2rem;
+    }
+
+    .conteudo-inicio {
+        top: 30%;
+    }
+
+    .name-inicio,
+    .surname-inicio {
+        font-size: 50px;
+    }
+
+    .destaque-inicio {
+        font-size: 20px;
+    }
+
+    .cta-container {
+        margin-top: 20%;
+    }
+
     .sobre {
         height: auto;
-    }
-
-    .container-sobre {
-        height: auto;
-        margin-top: 35%
-    }
-    
-    .headline-sobre {
-        height: auto;
-        position: relative;
+        flex-direction: column;
+        text-align: center;
     }
 
     .conteudo-sobre {
-        flex-direction: column-reverse;
-        height: auto;
-        gap: 3rem;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .left-sobre {
-        width: 100%;
-        height: auto;
-    }
-
+    .left-sobre,
     .right-sobre {
         width: 100%;
-        height: auto;
-        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .data-about {
+        flex-direction: column;
+    }
+
+    .imagem-sobre img {
+        max-width: 250px;
+        max-height: 350px;
+    }
+
+    .certficates,
+    .skills {
+        padding: 0.5rem;
+    }
+
+    .certficates-container,
+    .container-skills {
         margin-top: 5%;
     }
 
-    .imagem-sobre {
-        margin-top: 50%;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        margin-bottom: 70%;
+    .certficates-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    mark {
-        color: #000;
-        background-color: white;
-        display: inline-block;
-        white-space: nowrap;
-        overflow: hidden;
-        height: 40px; 
-        line-height: 40px; 
-        animation: typing 5s steps(30) 1 normal forwards, blink 1.75s step-end ;
+    .grid-certificates {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 30px;
     }
-    
-@keyframes typing {
-    from {
-        width: 0;
+
+    .projectCertificates img {
+        width: 90%;
     }
-    to {
-        width: 63%;
+
+    .modalCertificate-content {
+        width: 80%;
+        max-width: 500px;
     }
+
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .box-skills {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
+.content-skills{
+    margin-left: 30px;
 }
 
-
-    /************************** PORTFOLIO ***/
-
-    .container-portfolio {
-        gap: 2rem;
-        padding: 2rem 1rem;
+    .skill,
+    .icon-language {
+        width: 80px;
+        height: 80px;
     }
 
-    .headline-portfolio {
+    .skill i,
+    .icon-language img {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .servicos,
+    .free-your-mind,
+    .portfolio,
+    .contato {
+        padding: 1.5rem;
+    }
+
+    .free-your-mind span {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container-servicos,
+    .container-free-your-mind,
+    .container-contato {
         flex-direction: column;
-        height: auto;
-    }
-
-    .headline-portfolio .titulo {
-        width: 100%;
-        display: flex;
         align-items: center;
-        justify-content: left;
+        text-align: center;
     }
 
-    .headline-portfolio .titulo {
-        font-size: 6rem;
-    }
-
-    .headline-portfolio .descricao {
+    .titulo-servicos,
+    .descricao-servicos,
+    .headline-portfolio .title,
+    .headline-portfolio .description {
         width: 100%;
-        text-align: right;
-        font-size: 1.4rem;
+        text-align: center;
     }
 
-    .container-case {
-        gap: 2rem;
+    .titulo-servicos h1,
+    .headline-portfolio .title {
+        font-size: 15vw;
     }
 
-    .case1,
-    .case3 {
+    .descricao-servicos p{
+        display: none;
+    }
+    .headline-portfolio .description {
+        font-size: 1.1rem;
+    }
+
+    .servicos-cards {
+        gap: 1rem;
+    }
+
+    .card-servicos,
+    .card-servicos-left {
         flex-direction: column;
-        gap: 1rem;
-        height: auto;
-        justify-content: center;
-        margin-bottom: 10%;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 20px;
     }
 
-    .case2, 
-    .case4 {
-        flex-direction: column-reverse;
-        gap: 1rem;
-        height: auto;
-        height: auto;
-        justify-content: center;
+    .card-icon {
+        width: 80px;
+        height: 40px;
     }
-    
-    .imagens-case {
-        width: 100%;
-        height: 60vh;
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-servicos-left {
         margin-bottom: 5%;
     }
 
-    .textos-case {
-        width: 100%;
-        height: 35vh;
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 30px;
     }
 
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
+
 
 @media (min-width: 900px) {
     .conteudo-skills {
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
 @media (min-width: 600px) {
     .conteudo-skills {
         grid-template-columns: repeat(2, 1fr);
     }
+
     #imagem {
-        width: 100px; /* Ajuste para telas de tablets */
+        width: 100px;
     }
 }
 
-/* Estilos para telas de 469px ou menores */
 @media (max-width: 470px) {
 
-    /* Ajustes na imagem */
     #imagem {
-        width: 40%; /* Reduzir o tamanho da imagem */
+        width: 40%;
     }
 
-    /* Logo ajuste */
     .logo-inicio {
         width: 100%;
-        height: auto; /* Manter a proporção da imagem */
+        height: auto;
     }
 
     .logo-inicio img {
-        content: url('../../assets/img/logo.png'); /* Nova imagem para telas menores */
-        transform: translateX(150%) translateY(-290%) scale(3); /* Ajuste da posição e escala */
+        content: url('../../assets/img/logo.png');
+        transform: translateX(150%) translateY(-290%) scale(3);
     }
 
-    /* Ajuste para sobrenome */
     .surname-inicio {
-        margin-right: 5%; /* Menos margem no sobrenome */
+        margin-right: 5%;
     }
 
-    /* Ajuste de container para telas pequenas */
     .container {
-        padding: 0 1rem; /* Ajusta o padding da container */
+        padding: 0 1rem;
     }
 
-    /* Ajustes para a seção SOBRE */
     .sobre {
         height: auto;
         margin-top: 70%;
@@ -210,7 +270,8 @@
     .conteudo-sobre {
         flex-direction: column-reverse;
         height: auto;
-        gap: 1.5rem; /* Menor gap entre os itens */
+        gap: 1.5rem;
+
     }
 
     .left-sobre,
@@ -232,7 +293,18 @@
         margin-bottom: 55%;
     }
 
-    /* Ajustes para o Portfolio */
+    .titulo-contato {
+        display: none;;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 30px;
+    }
+
+
     .container-portfolio {
         gap: 1rem;
         padding: 1rem;
@@ -245,7 +317,7 @@
 
     .headline-portfolio .titulo {
         width: 100%;
-        font-size: 3rem; /* Ajuste para um tamanho menor de texto */
+        font-size: 3rem;
     }
 
     .headline-portfolio .descricao {
@@ -267,7 +339,7 @@
         margin-bottom: 5%;
     }
 
-    .case2, 
+    .case2,
     .case4 {
         flex-direction: column-reverse;
         gap: 1rem;
@@ -277,46 +349,41 @@
 
     .imagens-case {
         width: 100%;
-        height: 40vh; /* Reduzir a altura das imagens */
+        height: 40vh;
         margin-bottom: 3%;
     }
 
     .textos-case {
         width: 100%;
-        height: auto; /* Ajuste na altura */
+        height: auto;
     }
 }
-/* Estilos para telas de 300px ou menores */
+
 @media (max-width: 300px) {
 
-    /* Ajustes na imagem */
     #imagem {
-        width: 30%; /* Reduz ainda mais o tamanho da imagem */
+        width: 30%;
     }
 
-    /* Logo ajuste */
     .logo-inicio {
         width: 100%;
         height: auto;
     }
 
     .logo-inicio img {
-        content: url('../../assets/img/logo-small.png'); /* Outra imagem para telas muito pequenas */
+        content: url('../../assets/img/logo-small.png');
         transform: translateX(120%) translateY(-250%) scale(2.5);
     }
 
-    /* Ajuste para sobrenome */
     .surname-inicio {
         width: 100%;
         height: 10%;
     }
 
-    /* Ajuste de container para telas pequenas */
     .container {
-        padding: 0 0.5rem; /* Redução do padding */
+        padding: 0 0.5rem;
     }
 
-    /* Ajustes para a seção SOBRE */
     .sobre {
         margin-top: 50%;
     }
@@ -335,33 +402,41 @@
         margin-bottom: 40%;
     }
 
-    /* Ajustes para o Portfolio */
     .container-portfolio {
         gap: 0.5rem;
         padding: 0.5rem;
     }
 
     .headline-portfolio .titulo {
-        font-size: 2rem; /* Redução do tamanho do título */
+        font-size: 2rem;
     }
 
     .headline-portfolio .descricao {
         font-size: 0.9rem;
     }
 
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 30px;
+    }
+
     .case1,
     .case3,
-    .case2, 
+    .case2,
     .case4 {
         gap: 0.5rem;
         margin-bottom: 3%;
     }
 
     .imagens-case {
-        height: 30vh; /* Reduzir ainda mais a altura das imagens */
+        height: 30vh;
+
     }
 
     .textos-case {
-        font-size: 0.9rem; /* Redução no tamanho do texto */
+        font-size: 0.9rem;
+
     }
 }
