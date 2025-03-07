@@ -700,12 +700,15 @@ header.visible,
 }
 
 .projectCertificates {
-
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-
+    display: block;
 }
+
+.projectCertificates img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 
 .projectCertificates::after {
     content: attr(data-site);
