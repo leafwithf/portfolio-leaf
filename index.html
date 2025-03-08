@@ -13,6 +13,13 @@
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Indie+Flower&family=Kaushan+Script&family=Permanent+Marker&family=VT323&family=Zeyada&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
@@ -29,7 +36,8 @@
     </div>
 
     <!--HEADER-->
-    <!-- Diminuir o tamanho no mobile (img and size) -->
+    <!-- Dar um aspecto mais claro -->
+    <!-- barra de rolagem ta deixando espaço no header -->
     <div class="container">
         <header class="header">
             <div class="logo">
@@ -37,10 +45,13 @@
             </div>
 
             <!-- ENGLISH/PORTUGUESE MODE -->
+            <!-- SVG com cores invertidas -->
             <label id="language-switch">
                 <img id="language-icon" src="assets/img/svg/BrasilPB.svg" alt="Mudar idioma" width="40">
             </label>
 
+
+            <!-- retirar animação do icon -->
             <div class="menu">
                 <label class="hamburger">
                     <input type="checkbox" id="menuToggle">
@@ -63,6 +74,7 @@
         </header>
 
         <!--INICIO-->
+        <!-- Mudar completamente esta introdução -->
         <main id="inicio" class="inicio">
             <div class="container-inicio">
                 <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
@@ -101,14 +113,13 @@
         <section id="sobre" class="sobre">
             <div class="container-sobre">
                 <div class="conteudo-sobre">
-                    <div class="left-sobre" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="right-sobre" data-aos="fade-right" data-aos-duration="1000">
                         <div class="texts-about">
-                            <h1 data-translate="about">Olá, me chamo Rafael
+                            <h1 data-translate="about">
+                                Olá, me chamo
                             </h1>
-                            <p data-translate="descriptionAbout">
-                                Movido pela curiosidade, busco transformar ideias em experiências visuais cativantes,
-                                explorando novas formas de expressão. Este espaço reflete minha paixão pela inovação.
-                            </p>
+                            <br>
+                            <span id="nome-dinamico">Rafael</span>
                             <div class="download-about">
                                 <a href="assets/documents/Currículo-Rafa.pdf" download="Currículo-Rafa.pdf"
                                     data-translate="download">
@@ -117,77 +128,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="right-sobre" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="left-sobre" data-aos="fade-left" data-aos-duration="1000">
                         <div class="imagem-sobre">
-                            <img src="assets/img/logo.png" alt="">
+                            <img src="assets/img/1212.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CERTIFICATES -->
-        <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
-            <div class="container-certficates">
-                <div class="headline-certficates">
-                    <div class="text-headline-certficates" data-aos="fade-up" data-aos-delay="200"
-                        data-aos-duration="1000">
-                        <h2 data-translate="certificates">Certificados</h2>
-                        <p data-translate="descriptionCertificates">Certificados de cursos e eventos em que participei.
-                        </p>
-                    </div>
-                </div>
-                <div class="grid-certificates">
-                    <div class="projectCertificates" onclick="openModal('culturadigital')" data-site="BRCD"
-                        data-translate="Bradesco - Cultura Digital">
-                        <img src="assets/img/certificates/CULTURA_DIGITAL.png"
-                            alt="Certificado Bradesco - Cultura Digital">
-                    </div>
-                    <div class="projectCertificates" onclick="openModal('letramentodigital')" data-site="BRLET"
-                        data-translate="brletramento">
-                        <img src="assets/img/certificates/Letramento_Digital.png"
-                            alt="Certificado Bradesco - Letramento Digital">
-                    </div>
-                    <div class="projectCertificates" onclick="openModal('fundamentosti')" data-site="BRFTI"
-                        data-translate="brfundamentos">
-                        <img src="assets/img/certificates/Fundamentos_TI.png"
-                            alt="Certificado Bradesco - Fundamentos de TI">
-                    </div>
-                    <div class="projectCertificates" onclick="openModal('sharepoint')" data-site="BRSP"
-                        data-translate="brsharepoint">
-                        <img src="assets/img/certificates/Sharepoint.png" alt="Certificado Bradesco - Sharepoint">
-                    </div>
-                    <div class="projectCertificates" onclick="openModal('designgrafico')" data-site="AZDG"
-                        data-translate="areazdesign">
-                        <img src="assets/img/certificates/Design_Grafico.png" alt="Certificado Area Z - Design Gráfico">
-                    </div>
-                    <div class="projectCertificates" onclick="openModal('aftereffects')" data-site="AZAE"
-                        data-translate="areazafter">
-                        <img src="assets/img/certificates/After_Effects.png" alt="Certificado Area Z - After Effects">
-                    </div>
-                    <div class="projectCertificates" onclick="openModal('uspvemsaber')" data-site="USPVS">
-                        <img src="assets/img/certificates/USP_VemSaber.png" alt="Certificado USP - Vem Saber">
-                    </div>
-                    <div class="projectCertificates" onclick="openModal('uspnegociacao')" data-site="USPNI">
-                        <img src="assets/img/certificates/Negociacao.png"
-                            alt="Certificado USP - Negociação Internacional">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- MODAL CERTIFICATES -->
-        <div id="modal-certificate" class="modalCertificate">
-            <div class="modalCertificate-content">
-                <button class="close-certificate" onclick="closeModalCertificate()" aria-label="Fechar">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <br>
-                <img id="modalCertificateImage" class="modalCertificate-image" alt="Imagem do certificado" />
-                <br>
-                <div id="captionCertificate"></div>
-            </div>
-        </div>
 
         <!--SKILLS-->
         <section id="skills" class="skills" data-aos="fade-up" data-aos-duration="1000">
@@ -252,7 +201,7 @@
                                 <img src="assets/img/svg/Brasil.svg" alt="Brasil" width="60" height="60">
                                 <h4 data-translate="portuguese">Português</h4>
                             </div>
-                            <div class="icon-language" >
+                            <div class="icon-language">
                                 <img src="assets/img/svg/Deustch.svg" alt="Alemanha" width="60" height="60">
                                 <h4 data-translate="deustch">Alemão</h4>
                             </div>
@@ -264,6 +213,67 @@
                     </div>
                 </div>
         </section>
+
+        <!-- CERTIFICATES -->
+        
+        <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container-certficates">
+                <div class="headline-certficates">
+                    <div class="text-headline-certficates" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <h2 data-translate="certificates">Certificados</h2>
+                        <p data-translate="descriptionCertificates">Certificados de cursos e eventos em que participei.</p>
+                    </div>
+                </div>
+                <button id="toggle-certificates">
+                    <span id="button-text">Mostrar</span>
+                </button>
+                <div class="grid-certificates first-line">
+                    <div class="projectCertificates" onclick="openModal('culturadigital')" data-site="BRCD" data-translate="Bradesco - Cultura Digital">
+                        <img src="assets/img/certificates/CULTURA_DIGITAL.png" alt="Certificado Bradesco - Cultura Digital">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('letramentodigital')" data-site="BRLET" data-translate="brletramento">
+                        <img src="assets/img/certificates/Letramento_Digital.png" alt="Certificado Bradesco - Letramento Digital">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('fundamentosti')" data-site="BRFTI" data-translate="brfundamentos">
+                        <img src="assets/img/certificates/Fundamentos_TI.png" alt="Certificado Bradesco - Fundamentos de TI">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('sharepoint')" data-site="BRSP" data-translate="brsharepoint">
+                        <img src="assets/img/certificates/Sharepoint.png" alt="Certificado Bradesco - Sharepoint">
+                    </div>
+                </div>
+        
+                <div class="grid-certificates second-line">
+                    <div class="projectCertificates" onclick="openModal('designgrafico')" data-site="AZDG" data-translate="areazdesign">
+                        <img src="assets/img/certificates/Design_Grafico.png" alt="Certificado Area Z - Design Gráfico">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('aftereffects')" data-site="AZAE" data-translate="areazafter">
+                        <img src="assets/img/certificates/After_Effects.png" alt="Certificado Area Z - After Effects">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('uspvemsaber')" data-site="USPVS">
+                        <img src="assets/img/certificates/USP_VemSaber.png" alt="Certificado USP - Vem Saber">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('uspnegociacao')" data-site="USPNI">
+                        <img src="assets/img/certificates/Negociacao.png" alt="Certificado USP - Negociação Internacional">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- MODAL CERTIFICATES -->
+        <div id="modal-certificate" class="modalCertificate">
+            <div class="modalCertificate-content">
+                <button class="close-certificate" onclick="closeModalCertificate()" aria-label="Fechar">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <br>
+                <img id="modalCertificateImage" class="modalCertificate-image" alt="Imagem do certificado" />
+                <br>
+                <div id="captionCertificate"></div>
+            </div>
+        </div>
+
+        <!-- Transição de cor em forma de grãos ou bolinhas -->
 
         <!-- SERVICES -->
         <section id="servicos" class="servicos">
@@ -319,6 +329,7 @@
             </div>
         </section>
 
+
         <!-- FREE YOUR MIND -->
         <section id="free-your-mind" class="free-your-mind">
             <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
@@ -343,6 +354,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- Transição de cor em forma de grãos ou bolinhas -->
+
 
         <!-- PORTFÓLIO -->
         <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
@@ -371,6 +385,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
         <!-- MODAL PORTFÓLIO -->
@@ -396,6 +411,9 @@
                 </div>
             </div>
         </div>
+
+        <!-- Transição de cor em forma de grãos ou bolinhas -->
+
 
         <!--CONTATO-->
         <section id="contact" class="contato">
@@ -425,12 +443,16 @@
                             <div class="icon"><i class="bi bi-github"></i></div>
                             <h3>Github</h3>
                             <p><a href="https://github.com/leafwithf" target="_blank"
-                                    rel="noopener noreferrer">@leafwithf</a></p>
+                                    rel="noopener noreferrer">@leafwithf
+                                </a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Transição de cor em forma de grãos ou bolinhas -->
+
 
         <!--FOOTER-->
         <footer class="footer" id="footer">
@@ -448,7 +470,8 @@
                 </div>
             </div>
             <div class="footer-column credits-column">
-                <span data-translate="credits">&copy; 2024 Todos os direitos reservados. Desenvolvido por Raffa.</span>
+                <span>&copy;</span>
+                <span data-translate="credits">2024 Todos os direitos reservados. Desenvolvido por Raffa.</span>
             </div>
         </footer>
     </div>
@@ -464,8 +487,10 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/modalPortfolio.js"></script>
+    <script src="assets/js/closeCertificates.js"></script>
     <script src="assets/js/modalCertificates.js"></script>
     <script src="assets/js/translate.js"></script>
+    <script src="assets/js/name.js"></script>
 
 </body>
 
