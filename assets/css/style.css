@@ -905,6 +905,13 @@ header.visible,
     margin-bottom: 5px;
 }
 
+.skill h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-white);
+
+}
+
 .languages-container {
     display: flex;
     gap: 20px;
@@ -935,6 +942,13 @@ header.visible,
 .icon-language img {
     width: 60px;
     height: 60px;
+
+}
+
+.icon-language h4 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-white);
 
 }
 
@@ -983,6 +997,8 @@ header.visible,
     font-size: 8vw;
     font-weight: lighter;
     font-family: var(--font-grande);
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .descricao-servicos {
@@ -991,6 +1007,8 @@ header.visible,
     text-align: right;
     line-height: 1.4;
     letter-spacing: 1.5px;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .servicos-cards {
@@ -1032,6 +1050,15 @@ header.visible,
     font-size: clamp(0.8rem, 2.5vw + .4rem, 2rem);
     font-family: var(--font-pequena);
     font-weight: normal;
+
+}
+
+.card-titulo h1 {
+    font-size: 2rem;
+    font-family: var(--font-grande);
+    font-weight: 400;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .card-icon {

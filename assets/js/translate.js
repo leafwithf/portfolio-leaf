@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const languageSwitch = document.getElementById("language-switch");
     const languageIcon = document.getElementById("language-icon");
 
-    const flagPT = "assets/img/svg/Brasil.svg";
-    const flagEN = "assets/img/svg/English.svg";
+    const flagEN = "assets/img/svg/USAPB.svg";
+    const flagPT = "assets/img/svg/BrasilPB.svg";
 
     const translations = {
         "pt": {
