@@ -333,7 +333,7 @@ header.visible,
     text-align: center;
     gap: 1rem;
     position: absolute;
-    top: 40%;
+    top: 35%;
 }
 
 .conteudo-inicio a {
@@ -356,6 +356,8 @@ header.visible,
     color: var(--color-white);
     font-size: 70px;
     font-weight: 700;
+    letter-spacing: 10px;
+    margin-left: 50px;
     font-family: 'Poppins', serif;
 }
 
@@ -365,14 +367,14 @@ header.visible,
     font-weight: 700;
     font-family: var(--font-pequena);
     line-height: 1px;
-    margin-left: 10%;
+    margin-left: 3%;
 }
 
 .destaque-inicio {
     font-size: 25px;
-    letter-spacing: 10px;
+    letter-spacing: 17px;
     margin-top: 1%;
-    margin-left: 3%;
+    margin-left: 70px;
     font-weight: 100;
     font-family: var(--font-grande);
 }
@@ -383,7 +385,7 @@ header.visible,
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-top: 30%;
+    margin-top: 40%;
 }
 
 .cta,

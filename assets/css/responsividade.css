@@ -12,6 +12,13 @@
         left: 0px;
     }
 
+    .logo-inicio {
+        content: url('../../assets/img/logo.png');
+        width: 20%;
+        height: auto;
+        transform: translateX(-220px) translateY(-2px);
+    }
+
     .logo img {
         width: 80px;
     }
@@ -21,20 +28,35 @@
     }
 
     .conteudo-inicio {
-        top: 30%;
+        top: 35%;
+        left: 5%;
+        margin-bottom: 100% ;
     }
 
     .name-inicio,
     .surname-inicio {
-        font-size: 50px;
+        font-size: 90px;
+    }
+
+    .name-inicio {
+        letter-spacing: 15px;
+        margin-left: 70px;
+    }
+
+    .surname-inicio {
+        margin-right: 30px;
     }
 
     .destaque-inicio {
-        font-size: 20px;
+        font-size: 35px;
+        letter-spacing: 20px;
+        margin-left: 8%;
     }
 
     .cta-container {
-        margin-top: 20%;
+        margin-top: 50%;
+        width: 100%;
+        transform: scale(1.5);
     }
 
     .sobre {
@@ -48,10 +70,13 @@
         align-items: center;
     }
 
-    .left-sobre,
+    .imagem-sobre{
+        width: 100%;
+        transform: translateX(10px) translateY(-920px);
+    }
+
     .right-sobre {
         width: 100%;
-        text-align: center;
     }
 
     .data-about {
@@ -59,8 +84,8 @@
     }
 
     .imagem-sobre img {
-        max-width: 250px;
-        max-height: 350px;
+        max-width: 350px;
+        max-height: 450px;
     }
 
     .certficates,
@@ -104,9 +129,9 @@
         padding: 1rem;
     }
 
-.content-skills{
-    margin-left: 30px;
-}
+    .content-skills {
+        margin-left: 30px;
+    }
 
     .skill,
     .icon-language {
@@ -154,9 +179,10 @@
         font-size: 15vw;
     }
 
-    .descricao-servicos p{
+    .descricao-servicos p {
         display: none;
     }
+
     .headline-portfolio .description {
         font-size: 1.1rem;
     }
@@ -294,7 +320,8 @@
     }
 
     .titulo-contato {
-        display: none;;
+        display: none;
+        ;
     }
 
     .contact {

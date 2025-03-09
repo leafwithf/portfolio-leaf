@@ -20,19 +20,11 @@ document.addEventListener("DOMContentLoaded", function () {
         updateTranslations(); 
 
         const languageIcon = document.getElementById("language-icon");
-        if (isPortuguese) {
-            languageIcon.src = "assets/img/svg/BrasilPB.svg";
-        } else {
-            languageIcon.src = "assets/img/svg/USAPB.svg";
-        }
+        languageIcon.src = isPortuguese ? "assets/img/svg/BrasilPB.svg" : "assets/img/svg/USAPB.svg";
     });
 
     function updateTranslations() {
-        if (isPortuguese) {
-            buttonText.textContent = translations.pt.visualize;
-        } else {
-            buttonText.textContent = translations.en.visualize;
-        }
+        buttonText.textContent = isPortuguese ? translations.pt.visualize : translations.en.visualize;
     }
 
     document.getElementById("toggle-certificates").addEventListener("click", function () {
@@ -40,19 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
         section.classList.toggle("active");
 
         if (section.classList.contains("active")) {
-            if (isPortuguese) {
-                buttonText.textContent = translations.pt.less; 
-            } else {
-                buttonText.textContent = translations.en.less; 
-            }
-
+            buttonText.textContent = isPortuguese ? translations.pt.less : translations.en.less;
             arrowIcons.forEach(arrow => arrow.src = "assets/img/svg/arrowUp.svg");
-            if (isPortuguese) {
-                buttonText.textContent = translations.pt.visualize; 
-            } else {
-                buttonText.textContent = translations.en.visualize;
-            }
-
+        } else {
+            buttonText.textContent = isPortuguese ? translations.pt.visualize : translations.en.visualize;
             arrowIcons.forEach(arrow => arrow.src = "assets/img/svg/arrowDown.svg");
         }
     });
