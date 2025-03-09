@@ -142,11 +142,11 @@ a {
     justify-content: space-between;
     z-index: 10;
     transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
-    background-color: var(--color-blackl);
+    background-color: #e2e2e209;
     -webkit-backdrop-filter: blur(25px);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 4px 10px var(--shadow-blackl);
+    box-shadow: 0 4px 10px var(--shadow-white);
 }
 
 header.visible {
@@ -180,7 +180,6 @@ header.visible,
 }
 
 /* INGLES OU PORTUGUES */
-
 #language-switch {
     position: fixed;
     display: flex;
@@ -693,30 +692,47 @@ header.visible,
 }
 
 #toggle-certificates {
-    background-color: #6a0dad;
+    background-color: var(--color-black);
+    font-family: var(--font-pequena);
+    font-size: 1.5rem;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    margin: 20px auto;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     border-radius: 8px;
     transition: background 0.3s ease-in-out;
 }
 
-#toggle-certificates span {
-    display: inline-block;
-    color: var(--color-grayl);
-    border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
-    padding-bottom: 5px;
-    width: 100%;
+.arrow-icon {
+    width: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#toggle-certificates.active .arrow-icon {
+    transform: rotate(180deg);
+}
+
+#toggle-certificates #button-text {
     text-align: center;
 }
+
 
 #toggle-certificates.active #button-text {
     text-decoration: none;
     border-bottom: 1px solid hsla(0, 0%, 100%, 0.15);
+}
+
+#toggle-certificates.active #arrow-icon {
+    transform: rotate(180deg);
+}
+
+#certificates.active #toggle-certificates {
+    margin-top: 20px;
+    text-align: center;
 }
 
 .grid-certificates {
@@ -738,7 +754,6 @@ header.visible,
     height: auto;
     display: block;
 }
-
 
 .projectCertificates::after {
     content: attr(data-site);
@@ -1435,7 +1450,7 @@ header.visible,
 }
 
 .contact-item h3 {
-    color: var(--color-grayl);
+    color: var(--color-black);
 }
 
 .icon {

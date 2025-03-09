@@ -50,7 +50,6 @@
                 <img id="language-icon" src="assets/img/svg/BrasilPB.svg" alt="Mudar idioma" width="40">
             </label>
 
-
             <!-- retirar animação do icon -->
             <div class="menu">
                 <label class="hamburger">
@@ -215,51 +214,67 @@
         </section>
 
         <!-- CERTIFICATES -->
-        
         <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-certficates">
                 <div class="headline-certficates">
-                    <div class="text-headline-certficates" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="text-headline-certficates" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-duration="1000">
                         <h2 data-translate="certificates">Certificados</h2>
-                        <p data-translate="descriptionCertificates">Certificados de cursos e eventos em que participei.</p>
+                        <p data-translate="descriptionCertificates">Certificados de cursos e eventos em que participei.
+                        </p>
                     </div>
                 </div>
+
+                <!-- BUTTON "MOSTRAR TUDO" -->
                 <button id="toggle-certificates">
-                    <span id="button-text">Mostrar</span>
+                    <img class="arrow-icon" src="assets/img/svg/arrowDown.svg" alt="Mostrar certificados" width="20">
+                    <span id="button-text" data-translate="bttncertificates">Tudo</span>
+                    <img class="arrow-icon" src="assets/img/svg/arrowDown.svg" alt="Mostrar certificados" width="20">
                 </button>
+
                 <div class="grid-certificates first-line">
-                    <div class="projectCertificates" onclick="openModal('culturadigital')" data-site="BRCD" data-translate="Bradesco - Cultura Digital">
-                        <img src="assets/img/certificates/CULTURA_DIGITAL.png" alt="Certificado Bradesco - Cultura Digital">
+                    <div class="projectCertificates" onclick="openModal('culturadigital')" data-site="BRCD"
+                        data-translate="Bradesco - Cultura Digital">
+                        <img src="assets/img/certificates/CULTURA_DIGITAL.png"
+                            alt="Certificado Bradesco - Cultura Digital">
                     </div>
-                    <div class="projectCertificates" onclick="openModal('letramentodigital')" data-site="BRLET" data-translate="brletramento">
-                        <img src="assets/img/certificates/Letramento_Digital.png" alt="Certificado Bradesco - Letramento Digital">
+                    <div class="projectCertificates" onclick="openModal('letramentodigital')" data-site="BRLET"
+                        data-translate="brletramento">
+                        <img src="assets/img/certificates/Letramento_Digital.png"
+                            alt="Certificado Bradesco - Letramento Digital">
                     </div>
-                    <div class="projectCertificates" onclick="openModal('fundamentosti')" data-site="BRFTI" data-translate="brfundamentos">
-                        <img src="assets/img/certificates/Fundamentos_TI.png" alt="Certificado Bradesco - Fundamentos de TI">
+                    <div class="projectCertificates" onclick="openModal('fundamentosti')" data-site="BRFTI"
+                        data-translate="brfundamentos">
+                        <img src="assets/img/certificates/Fundamentos_TI.png"
+                            alt="Certificado Bradesco - Fundamentos de TI">
                     </div>
-                    <div class="projectCertificates" onclick="openModal('sharepoint')" data-site="BRSP" data-translate="brsharepoint">
+                    <div class="projectCertificates" onclick="openModal('sharepoint')" data-site="BRSP"
+                        data-translate="brsharepoint">
                         <img src="assets/img/certificates/Sharepoint.png" alt="Certificado Bradesco - Sharepoint">
                     </div>
                 </div>
-        
+
                 <div class="grid-certificates second-line">
-                    <div class="projectCertificates" onclick="openModal('designgrafico')" data-site="AZDG" data-translate="areazdesign">
+                    <div class="projectCertificates" onclick="openModal('designgrafico')" data-site="AZDG"
+                        data-translate="areazdesign">
                         <img src="assets/img/certificates/Design_Grafico.png" alt="Certificado Area Z - Design Gráfico">
                     </div>
-                    <div class="projectCertificates" onclick="openModal('aftereffects')" data-site="AZAE" data-translate="areazafter">
+                    <div class="projectCertificates" onclick="openModal('aftereffects')" data-site="AZAE"
+                        data-translate="areazafter">
                         <img src="assets/img/certificates/After_Effects.png" alt="Certificado Area Z - After Effects">
                     </div>
                     <div class="projectCertificates" onclick="openModal('uspvemsaber')" data-site="USPVS">
                         <img src="assets/img/certificates/USP_VemSaber.png" alt="Certificado USP - Vem Saber">
                     </div>
                     <div class="projectCertificates" onclick="openModal('uspnegociacao')" data-site="USPNI">
-                        <img src="assets/img/certificates/Negociacao.png" alt="Certificado USP - Negociação Internacional">
+                        <img src="assets/img/certificates/Negociacao.png"
+                            alt="Certificado USP - Negociação Internacional">
                     </div>
                 </div>
+
             </div>
         </section>
-        
-        
+
         <!-- MODAL CERTIFICATES -->
         <div id="modal-certificate" class="modalCertificate">
             <div class="modalCertificate-content">
