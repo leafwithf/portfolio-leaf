@@ -1,242 +1,74 @@
 @media (max-width: 1024px) {
-    .container {
-        max-width: 100%;
-        padding: 0 1rem;
+    /* Ajustes gerais */
+    body {
+        font-size: 14px; /* Reduzir o tamanho da fonte para melhor legibilidade */
     }
 
     .header {
-        padding: 0.8rem 1rem;
-    }
-
-    .logo {
-        left: 0px;
-    }
-
-    .logo-inicio {
-        content: url('../../assets/img/logo.png');
-        width: 20%;
-        height: auto;
-        transform: translateX(-220px) translateY(-2px);
+        padding: 0.5rem 1rem; /* Reduzir o padding do header */
     }
 
     .logo img {
-        width: 80px;
+        width: 70px; /* Reduzir o tamanho do logo */
+    }
+
+    .menu {
+        flex-direction: column; /* Mudar a direção do menu para coluna */
+        align-items: flex-start; /* Alinhar itens à esquerda */
     }
 
     .nav-menu a {
-        font-size: 2rem;
+        font-size: 2rem; /* Reduzir o tamanho da fonte dos links do menu */
     }
 
-    .conteudo-inicio {
-        top: 35%;
-        left: 5%;
-        margin-bottom: 100% ;
-    }
-
-    .name-inicio,
-    .surname-inicio {
-        font-size: 90px;
-    }
-
-    .name-inicio {
-        letter-spacing: 15px;
-        margin-left: 70px;
-    }
-
-    .surname-inicio {
-        margin-right: 30px;
+    .inicio .name-inicio {
+        font-size: 100px; /* Reduzir o tamanho da fonte */
     }
 
     .destaque-inicio {
-        font-size: 35px;
-        letter-spacing: 20px;
-        margin-left: 8%;
+        font-size: 100px; /* Reduzir o tamanho da fonte */
     }
 
-    .cta-container {
-        margin-top: 50%;
-        width: 100%;
-        transform: scale(1.5);
+    .cta {
+        padding: 0.4em 1em; /* Ajustar o padding do botão CTA */
     }
 
-    .sobre {
-        height: auto;
-        flex-direction: column;
-        text-align: center;
+    .sobre .container-sobre {
+        flex-direction: column; /* Mudar a direção para coluna */
+        align-items: center; /* Centralizar os itens */
     }
 
-    .conteudo-sobre {
-        flex-direction: column;
-        align-items: center;
+    .skills .container-skills {
+        flex-direction: column; /* Mudar a direção para coluna */
     }
 
-    .imagem-sobre{
-        width: 100%;
-        transform: translateX(10px) translateY(-920px);
+    .certificates .grid-certificates {
+        grid-template-columns: repeat(2, 1fr); /* Mudar para 2 colunas */
     }
 
-    .right-sobre {
-        width: 100%;
-    }
-
-    .data-about {
-        flex-direction: column;
-    }
-
-    .imagem-sobre img {
-        max-width: 350px;
-        max-height: 450px;
-    }
-
-    .certficates,
-    .skills {
-        padding: 0.5rem;
-    }
-
-    .certficates-container,
-    .container-skills {
-        margin-top: 5%;
-    }
-
-    .certficates-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .grid-certificates {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        padding: 30px;
-    }
-
-    .projectCertificates img {
-        width: 90%;
-    }
-
-    .modalCertificate-content {
-        width: 80%;
-        max-width: 500px;
-    }
-
-    .skills-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .box-skills {
-        width: 90%;
-        height: auto;
-        padding: 1rem;
-    }
-
-    .content-skills {
-        margin-left: 30px;
-    }
-
-    .skill,
-    .icon-language {
-        width: 80px;
-        height: 80px;
-    }
-
-    .skill i,
-    .icon-language img {
-        font-size: 30px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .servicos,
-    .free-your-mind,
-    .portfolio,
-    .contato {
-        padding: 1.5rem;
-    }
-
-    .free-your-mind span {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .container-servicos,
-    .container-free-your-mind,
-    .container-contato {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .titulo-servicos,
-    .descricao-servicos,
-    .headline-portfolio .title,
-    .headline-portfolio .description {
-        width: 100%;
-        text-align: center;
-    }
-
-    .titulo-servicos h1,
-    .headline-portfolio .title {
-        font-size: 15vw;
-    }
-
-    .descricao-servicos p {
-        display: none;
-    }
-
-    .headline-portfolio .description {
-        font-size: 1.1rem;
-    }
-
-    .servicos-cards {
-        gap: 1rem;
-    }
-
-    .card-servicos,
-    .card-servicos-left {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
-        border-radius: 20px;
-    }
-
-    .card-icon {
-        width: 80px;
-        height: 40px;
-    }
-
-    .grid {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .card-servicos-left {
-        margin-bottom: 5%;
-    }
-
-    .contact {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: 30px;
+    .portfolio .gridPortfolio {
+        grid-template-columns: repeat(1, 1fr); /* Mudar para 1 coluna */
     }
 
     .footer {
-        padding: 2rem 1rem;
+        flex-direction: column; /* Mudar a direção do footer para coluna */
+        align-items: center; /* Centralizar os itens */
     }
 
-    .footer-nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
+    .footer-column {
+        flex-direction: column; /* Mudar a direção das colunas do footer para coluna */
+        align-items: center; /* Centralizar os itens */
     }
 
-    .container-footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    .contact {
+        flex-direction: column; /* Mudar a direção do contato para coluna */
+        align-items: center; /* Centralizar os itens */
+    }
+
+    .contact-item {
+        margin-bottom: 20px; /* Adicionar espaço entre os itens de contato */
     }
 }
-
 
 @media (min-width: 900px) {
     .conteudo-skills {

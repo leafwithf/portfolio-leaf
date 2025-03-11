@@ -19,25 +19,6 @@
 
 }
 
-/* BARRA DE ROLAGEM */
-::-webkit-scrollbar {
-    width: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--color-black);
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--color-grayb);
-    border-radius: 20px;
-    border: 3px solid var(--color-black);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--color-white);
-}
-
 #tela-inicial {
     position: fixed;
     top: 0;
@@ -55,15 +36,6 @@
 #imagem {
     width: 150px;
     cursor: pointer;
-}
-
-html,
-body {
-    overflow-x: hidden;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -104,6 +76,34 @@ body {
     bottom: 20px;
     left: 20px;
     box-shadow: 0px 0px 10px var(--color-white);
+}
+
+#whatsappButton {
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5); 
+    animation: pulse 2s infinite;
+}
+
+#whatsappButton i {
+    font-size: 24px;
+    color: #fff;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
 }
 
 .fixed-button i {
