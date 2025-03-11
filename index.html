@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="google5cce857881be0ece" />
+    <meta name="description"
+        content="Desenvolvedor Web e Designer Gráfico. Conheça meus projetos e habilidades. Entre em contato para saber mais.">
+    <meta name="keywords"
+        content="Desenvolvedor Web, Designer Gráfico, Front-end, Back-end, React.js, Node.js, HTML5, CSS3, JavaScript, Python, Figma, Photoshop, Illustrator, After Effects">
+    <meta name="author" content="Rafael Fernandes">
     <link rel="icon" href="assets/favicon/logoic.ico" type="icon">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsividade.css">
-    <link rel="stylesheet" href="assets/css/darkMode.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/grain-trasition.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
         integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,80 +35,67 @@
 </head>
 
 <body>
-
     <!-- BACK-TO-TOP -->
     <div id="backToTop" class="fixed-button">
         <i class="bi bi-chevron-up"></i>
     </div>
 
     <!--HEADER-->
-    <!-- Dar um aspecto mais claro -->
-    <!-- barra de rolagem ta deixando espaço no header -->
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img src="assets/img/logo.png" alt="">
+                <img src="assets/img/marca/logo.png" alt="">
             </div>
 
             <!-- ENGLISH/PORTUGUESE MODE -->
             <!-- SVG com cores invertidas -->
+<!-- MElhorar bandeiras -->
             <label id="language-switch">
                 <img id="language-icon" src="assets/img/svg/BrasilPB.svg" alt="Mudar idioma" width="40">
             </label>
 
-            <!-- retirar animação do icon -->
             <div class="menu">
-                <label class="hamburger">
-                    <input type="checkbox" id="menuToggle">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom"
-                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                        </path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
                 </label>
             </div>
             <div class="menu-aberto">
                 <nav class="nav-menu">
                     <a href="#inicio" data-translate="home">INÍCIO</a>
                     <a href="#sobre" data-translate="aboutnav">SOBRE</a>
-                    <a href="#portfolio" data-translate="portfolio">PORTFOLIO</a>
+                    <a href="#portfolio" data-translate="portfolio">PORTFÓLIO</a>
                     <a href="#contact" data-translate="contact">CONTATO</a>
                 </nav>
             </div>
         </header>
 
         <!--INICIO-->
-        <!-- Mudar completamente esta introdução -->
         <main id="inicio" class="inicio">
             <div class="container-inicio">
-                <div class="conteudo-inicio" data-aos="fade-up" data-aos-duration="1000">
+                <div class="conteudo-inicio">
                     <div class="logo-inicio">
-                        <img src="assets/img/logo-cut.png" alt="Logo">
+                        <img src="assets/img/marca/logo.png" alt="Logo" data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back" data-aos-delay="1000" data-aos-offset="0">
                     </div>
-                    <div class="name-inicio">
-                        <a>Raffa</a>
-                    </div>
-                    <div class="surname-inicio">
-                        <a>Freitas</a>
-                    </div>
-                    <div class="destaque-inicio">
-                        <a>Portfólio</a>
+                    <div class="container-name">
+                        <div class="name-inicio" data-aos="fade-left" data-aos-duration="3000" data-aos-delay="1750">
+                            <a>Raffa</a>
+                        </div>
+                        <div class="destaque-inicio" data-aos="fade-right" data-aos-duration="3000"
+                            data-aos-delay="1750">
+                            <a>Freitas</a>
+                        </div>
                     </div>
                 </div>
 
                 <!-- CTA -->
                 <div class="cta-container">
-                    <button class="cta" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
-                        id="cta-contact">
-                        <span data-translate="speaktome">Fale comigo</span>
-                    </button>
-
-                    <!-- CTA SCROLL -->
-                    <button class="cta-scroll" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
-                        id="cta-down">
-                        <i class="bi bi-mouse"></i>
-                        <span data-translate="scroll">role para baixo!</span>
+                    <button class="cta" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="3000"
+                        data-aos-duration="1000" id="cta-contact">
+                        <span data-translate="speaktome"> fale comigo </span>
                     </button>
                 </div>
             </div>
@@ -121,21 +114,18 @@
                             <span id="nome-dinamico">Rafael</span>
                             <div class="download-about">
                                 <a href="assets/documents/Currículo-Rafa.pdf" download="Currículo-Rafa.pdf"
-                                    data-translate="download">
-                                    <i class="fi fi-download"> Download CV </i>
-                                </a>
+                                    data-translate="download"> Download CV </a>
                             </div>
                         </div>
                     </div>
                     <div class="left-sobre" data-aos="fade-left" data-aos-duration="1000">
                         <div class="imagem-sobre">
-                            <img src="assets/img/1212.png" alt="">
+                            <img src="assets/img/marca/1212.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
         <!--SKILLS-->
         <section id="skills" class="skills" data-aos="fade-up" data-aos-duration="1000">
@@ -214,7 +204,7 @@
         </section>
 
         <!-- CERTIFICATES -->
-        <section id="certificates" class="certficates" data-aos="fade-up" data-aos-duration="1000">
+        <section id="certificates" class="certificates" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-certficates">
                 <div class="headline-certficates">
                     <div class="text-headline-certficates" data-aos="fade-up" data-aos-delay="200"
@@ -250,26 +240,27 @@
                     </div>
                 </div>
 
-            <div class="grid-certificates second-line">
-                <div class="projectCertificates" onclick="openModal('culturadigital')" data-site="BRCD"
-                    data-translate="Bradesco - Cultura Digital">
-                    <img src="assets/img/certificates/CULTURA_DIGITAL.png" alt="Certificado Bradesco - Cultura Digital">
+                <div class="grid-certificates second-line">
+                    <div class="projectCertificates" onclick="openModal('culturadigital')" data-site="BRCD"
+                        data-translate="Bradesco - Cultura Digital">
+                        <img src="assets/img/certificates/CULTURA_DIGITAL.png"
+                            alt="Certificado Bradesco - Cultura Digital">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('letramentodigital')" data-site="BRLET"
+                        data-translate="brletramento">
+                        <img src="assets/img/certificates/Letramento_Digital.png"
+                            alt="Certificado Bradesco - Letramento Digital">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('fundamentosti')" data-site="BRFTI"
+                        data-translate="brfundamentos">
+                        <img src="assets/img/certificates/Fundamentos_TI.png"
+                            alt="Certificado Bradesco - Fundamentos de TI">
+                    </div>
+                    <div class="projectCertificates" onclick="openModal('sharepoint')" data-site="BRSP"
+                        data-translate="brsharepoint">
+                        <img src="assets/img/certificates/Sharepoint.png" alt="Certificado Bradesco - Sharepoint">
+                    </div>
                 </div>
-                <div class="projectCertificates" onclick="openModal('letramentodigital')" data-site="BRLET"
-                    data-translate="brletramento">
-                    <img src="assets/img/certificates/Letramento_Digital.png"
-                        alt="Certificado Bradesco - Letramento Digital">
-                </div>
-                <div class="projectCertificates" onclick="openModal('fundamentosti')" data-site="BRFTI"
-                    data-translate="brfundamentos">
-                    <img src="assets/img/certificates/Fundamentos_TI.png"
-                        alt="Certificado Bradesco - Fundamentos de TI">
-                </div>
-                <div class="projectCertificates" onclick="openModal('sharepoint')" data-site="BRSP"
-                    data-translate="brsharepoint">
-                    <img src="assets/img/certificates/Sharepoint.png" alt="Certificado Bradesco - Sharepoint">
-                </div>
-            </div>
         </section>
 
         <!-- MODAL CERTIFICATES -->
@@ -286,6 +277,10 @@
         </div>
 
         <!-- Transição de cor em forma de grãos ou bolinhas -->
+        <!-- ARRUMAR  A LARGURA E TALVEZ MUDAR PARA OUTRO -->
+        <div class="container-transition">
+            <div class="grain-transition-bottom"></div>
+        </div>
 
         <!-- SERVICES -->
         <section id="servicos" class="servicos">
@@ -341,7 +336,6 @@
             </div>
         </section>
 
-
         <!-- FREE YOUR MIND -->
         <section id="free-your-mind" class="free-your-mind">
             <div class="container-free-your-mind" data-aos="fade-up" data-aos-duration="1000">
@@ -368,7 +362,10 @@
         </section>
 
         <!-- Transição de cor em forma de grãos ou bolinhas -->
-
+        <!-- ARRUMAR  A LARGURA E TALVEZ MUDAR PARA OUTRO -->
+        <div class="container-transition">
+            <div class="grain-transition-top"></div>
+        </div>
 
         <!-- PORTFÓLIO -->
         <section class="portfolio" id="portfolio" data-aos="fade-up" data-aos-duration="1000">
@@ -382,7 +379,7 @@
                         desenvolvimento web e design de interfaces, sempre criando soluções inovadoras e empolgantes
                     </span>
                 </div>
-                <div class="grid">
+                <div class="gridPortfolio">
                     <div class="projectPortfolio" onclick="openModalPortfolio('portfolio')" data-site="Portfólio">
                         <img src="assets/img/sitesfts/PT/index-pt.png" alt="Projeto 1">
                     </div>
@@ -425,7 +422,10 @@
         </div>
 
         <!-- Transição de cor em forma de grãos ou bolinhas -->
-
+        <!-- ARRUMAR  A LARGURA E TALVEZ MUDAR PARA OUTRO -->
+        <div class="container-transition">
+            <div class="grain-transition-bottom"></div>
+        </div>
 
         <!--CONTATO-->
         <section id="contact" class="contato">
@@ -464,13 +464,16 @@
         </section>
 
         <!-- Transição de cor em forma de grãos ou bolinhas -->
-
+        <!-- ARRUMAR  A LARGURA E TALVEZ MUDAR PARA OUTRO -->
+        <div class="container-transition">
+            <div class="grain-transition-top"></div>
+        </div>
 
         <!--FOOTER-->
         <footer class="footer" id="footer">
             <div class="container-footer">
                 <div class="footer-column logo-column">
-                    <img src="assets/img/logo.png" alt="">
+                    <img src="assets/img/marca/logopb.png" alt="">
                 </div>
                 <div class="footer-column menu-column">
                     <nav class="footer-nav">
@@ -499,10 +502,10 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/menu.js"></script>
     <script src="assets/js/modalPortfolio.js"></script>
-    <script src="assets/js/closeCertificates.js"></script>
     <script src="assets/js/modalCertificates.js"></script>
     <script src="assets/js/translate.js"></script>
     <script src="assets/js/name.js"></script>
+    <script src="assets/js/bloquear-arrastar-imagens.js"></script>
 
 </body>
 

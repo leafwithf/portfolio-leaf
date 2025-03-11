@@ -36,12 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
     
-    // CTA-SCROLL
-    document.getElementById("cta-down").addEventListener("click", function () {
-        document.getElementById("sobre").scrollIntoView({
-            behavior: "smooth"
-        });
-    });
 
 });
 

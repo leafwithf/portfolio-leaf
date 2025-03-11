@@ -1,6 +1,5 @@
     const fontes = [
         "Permanent Marker, cursive",
-        "VT323, monospace",
         "Indie Flower, cursive",
         "Kaushan Script, cursive"
     ];
