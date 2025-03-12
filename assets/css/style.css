@@ -5,6 +5,7 @@
     --color-blackl: rgba(0, 0, 0, 0.5);
     --shadow-blackl: rgba(0, 0, 0, 0.2);
     --shadow-white: rgba(255, 255, 255, 0.281);
+    --shadow-orange:#e76012e0;
     --color-black: #0a0908;
     --color-brown: #221f1b;
     --color-grayb: #7B7775;
@@ -64,18 +65,18 @@ body {
     height: 50px;
     border: transparent;
     border-radius: 50%;
-    background-color: var(--color-white);
-    color: var(--color-black);
+    background-color: var(--gradient4);
+    color: var(--color-white);
     cursor: pointer;
     z-index: 9;
     opacity: 0;
-    transition: opacity 0.5s ease, box-shadow 0.5s ease var(--shadow-white);
+    transition: opacity 0.5s ease, box-shadow 0.5s ease var(--shadow-orange);
 }
 
 #backToTop {
     bottom: 20px;
     left: 20px;
-    box-shadow: 0px 0px 10px var(--color-white);
+    box-shadow: 0px 0px 10px var(--shadow-orange);
 }
 
 #whatsappButton {
@@ -630,6 +631,8 @@ header.visible,
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .text-headline-skills h2 {
@@ -649,12 +652,8 @@ header.visible,
 .content-skills {
     display: flex;
 }
-
 .box-skills {
     border: 1px solid hsla(0, 0%, 100%, 0.15);
-    box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     color: var(--color-white);
@@ -677,7 +676,7 @@ header.visible,
 .skills-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
+    gap: 10px;
     padding: 20px;
     justify-items: center;
     -webkit-user-select: none;
@@ -691,35 +690,31 @@ header.visible,
     justify-content: center;
     width: 100px;
     height: 100px;
-    gap: 20px;
     background: transparent;
     border-radius: 10px;
+    position: relative;
+    z-index: 10;
     transition: transform 0.3s ease-in-out;
 }
-
-.skill:hover {
-    transform: scale(1.3);
-}
-
 .skill i {
     font-size: 40px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out; /* Transição mais suave */
 }
 
 .skill h4 {
     font-size: 1rem;
     font-weight: 300;
     color: var(--color-white);
-
 }
 
 .languages-container {
     display: flex;
-    gap: 20px;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 0px;
+    margin-top: -10%;
 }
 
 .icon-language {
@@ -732,10 +727,6 @@ header.visible,
     background: transparent;
     border-radius: 10px;
     transition: transform 0.3s ease-in-out;
-}
-
-.icon-language:hover {
-    transform: scale(1.3);
 }
 
 .icon-language img {
@@ -777,6 +768,8 @@ header.visible,
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .text-headline-certficates h2 {
@@ -1373,11 +1366,6 @@ header.visible,
     width: 40px;
     height: 40px;
 }
-
-
-/* TRANSIÇÃO */
-
-
 
 /* CONTATO  */
 .contato {
