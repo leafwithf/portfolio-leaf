@@ -48,20 +48,20 @@ window.projectsPortfolio = {
         ]
     },
 
-    "vidloader": {
-        title: { pt: "VidLoader", en: "VidLoader" },
+    "speedtest": {
+        title: { pt: "SpeedTest", en: "SpeedTest" },
         description: {
-            pt: "Ferramenta online para baixar vídeos do YouTube de forma rápida e simples.",
-            en: "An online tool to quickly and easily download YouTube videos."
+            pt: "Ferramenta online para testar a velocidade de sua internet de forma rápida e simples.",
+            en: "An online tool to quickly and easily test your internet."
         },
-        category: { pt: "Downloader de vídeos", en: "Video Downloader" },
-        image: "assets/img/sitesfts/MIA/cliente-mia.png",
-        link: "https://vidloader.netlify.app",
-        repoLink: "https://github.com/leafwithf/vidloader",
+        category: { pt: "Teste de Internet", en: "Internet Tester" },
+        image: "assets/img/sitesfts/ST/SpeedTest.png",
+        link: "https://leafwithf-speedtest-app-mnhg9l.streamlit.app",
+        repoLink: "https://github.com/leafwithf/SpeedTest",
         technologies: [
             `<img src="assets/img/svg/html5.svg" alt="HTML5" width="40" height="40">`,
             `<img src="assets/img/svg/css3.svg" alt="CSS3" width="40" height="40">`,
-            `<img src="assets/img/svg/javascript.svg" alt="JavaScript" width="40" height="40">`,
+            `<img src="assets/img/svg/streamlit.png" alt="StreamLit" width="40" height="40">`,
             `<img src="assets/img/svg/python.svg" alt="Python" width="40" height="40">`
         ]
     }
