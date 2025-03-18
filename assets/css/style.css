@@ -478,13 +478,13 @@ header.visible,
 }
 
 .download-about {
-    padding: 10% 0 15% 0;
+    padding: 10% 0 8% 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .download-about a {
@@ -494,7 +494,7 @@ header.visible,
     color: var(--color-white);
     font-size: 1.5rem;
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 1px;
     position: relative;
     overflow: hidden;
 }
@@ -559,16 +559,6 @@ header.visible,
     font-family: var(--font-grande);
 }
 
-.texts-about p {
-    color: var(--color-white);
-    font-family: var(--font-pequena);
-    font-size: 1.5rem;
-    font-weight: 100;
-    line-height: 1.4;
-    letter-spacing: 1.5px;
-    margin-bottom: 10%;
-}
-
 .right-sobre {
     color: var(--color-white);
     height: 100%;
@@ -577,15 +567,16 @@ header.visible,
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .left-sobre {
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    right: 90%;
+    bottom: 130%;
 }
 
 .imagem-sobre {
@@ -598,11 +589,96 @@ header.visible,
 
 .imagem-sobre img {
     width: 90%;
-    z-index: 99;
+    z-index: 1;
     max-width: 450px;
     max-height: 550px;
 }
 
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: nowrap;  
+}
+
+.socials-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    margin-bottom: 1em;
+}
+
+.button-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em;
+    border: 0px solid transparent;
+    border-radius: 1.25em;
+    transition: all 0.2s linear;
+    width: 100%;
+}
+
+.socials-icon {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: var(--color-white);
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.socials-icon i {
+    font-size: 4em;
+}
+
+.socials-icon img {
+    margin-top: -70%;
+    width: 80px;
+    height: 85px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 6em;
+    background-color: var(--color-blackl);
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 170%;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.253) transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 
 /* HABILIDADES */
 .skills {
@@ -620,7 +696,7 @@ header.visible,
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10%;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .headline-skills {
@@ -854,8 +930,6 @@ header.visible,
     flex-wrap: wrap;
     gap: 20px;
     transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-
-
 }
 
 .projectCertificates {
@@ -1380,7 +1454,7 @@ header.visible,
 
 .container-contato {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
@@ -1401,8 +1475,6 @@ header.visible,
     display: flex;
     align-items: center;
     justify-content: left;
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 .titulo-contato h1 {
@@ -1411,46 +1483,186 @@ header.visible,
     font-size: 8vw;
     font-weight: lighter;
     font-family: var(--font-grande);
-    -webkit-user-select: none;
-    user-select: none;
 }
 
-.contact {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+.descricao-contato {
+    width: 50%;
+    text-align: right;
 }
 
-.contact-item {
-    text-align: center;
-}
-
-.contact-item h3 {
+.descricao-contato a {
+    text-decoration: none;
     color: var(--color-black);
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    font-weight: bold;
 }
 
-.icon {
-    background-color: transparent;
-    padding: 15px;
-    border-radius: 50%;
+.conteudo-contato {
+    width: 100%;
+    height: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.formulario-contato {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.formulario-contato h2 {
+    font-size: 2rem;
+}
+
+.formulario-contato p {
+    font-size: 1.5rem;
+    color: var(--color-gray1);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
-    margin: 0 auto 10px auto;
+    gap: 1rem;
 }
 
-.icon i {
-    font-size: 24px;
-    color: var(--color-black);
+.form input {
+    font-family: var(--font-pequena);
+    width: 100%;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    padding: 1.5rem 1rem;
+    font-size: 1.2rem;
 }
 
-p a {
-    margin-top: 5px;
-    font-size: 14px;
-    color: var(--color-black);
+.form textarea {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    font-family: var(--font-pequena);
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem;
 }
+
+
+.form .input-box {
+    position: relative;
+    width: 100%;
+}
+
+.form .input-box input,
+.form .input-box textarea {
+    width: 100%;
+    padding: 1.5rem 1rem 1.5rem 3rem; /* Espaço à esquerda para o ícone */
+    border-radius: 30px;
+    outline: none;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    font-size: 1.2rem;
+    font-family: var(--font-pequena);
+}
+
+.form .input-box i {
+    position: absolute;
+    left: 10px; /* Ajuste para manter o ícone dentro do input */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: var(--color-gray1);
+}
+
+.logo-contato {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.logo-contato img {
+    width: 80%;
+    border-radius: 36px;
+}
+.box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover:before {
+    border-color: var(--gradient4);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: var(--gradient4);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: var(--gradient4);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  
 
 /*FOOTER*/
 .footer {

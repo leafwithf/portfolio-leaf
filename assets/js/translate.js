@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
             "speaktome": "fale comigo",
             "scroll": "Role para baixo",
             "descriptionAbout": "Movido pela curiosidade, busco transformar ideias em experiências visuais cativantes. Este espaço reflete minha paixão pela inovação.",
-            "download": "Baixar o Curriculo",
+            "download": "Baixar o Currículo",
             "mySkills": "Minhas habilidades",
             "descriptionMySkills": "Conheça as habilidades que possuo e as ferramentas que utilizo.",
             "portuguese": "Português",
@@ -37,16 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
             "code": "Ver Código",
             "contact": "Contato",
             "credits": "2024 Todos os direitos reservados. Desenvolvido por Raffa.",
-            "culturadigital": "Bradesco - Cultura Digital",
-            "letramentodigital": "Bradesco - Letramento Digital",
-            "fundamentosti": "Bradesco - Fundamentos de TI",
-            "sharepoint": "Bradesco - Sharepoint",
-            "designgrafico": "Area Z - Design Gráfico",
-            "aftereffects": "Area Z - After Effects",
-            "uspvemsaber": "USP - Vem Saber",
-            "uspnegociacao": "USP - Negociação Internacional",
             "certificates": "Certificados",
-            "descriptionCertificates": "Certificados de cursos e eventos em que participei."
+            "descriptionCertificates": "Certificados de cursos e eventos em que participei.",
+            "bttncertificates": "Ver Certificados",
+            "form-contact": "Entre em contato",
+            "title-contact": "Fale comigo",
+            "description-contact": "Entre em contato para colaborações, projetos ou apenas para trocar ideias! Estou sempre aberto a novas oportunidades e desafios na área de tecnologia.",
+            "name": "Nome",
+            "email": "E-mail",
+            "message": "Mensagem",
+            "send": "Enviar"
         },
         "en": {
             "home": "Home",
@@ -79,18 +79,19 @@ document.addEventListener("DOMContentLoaded", function () {
             "code": "View Code",
             "contact": "Contact",
             "credits": "2024 All rights reserved. Developed by Raffa.",
-            "culturadigital": "Bradesco - Digital Culture",
-            "letramentodigital": "Bradesco - Digital Literacy",
-            "fundamentosti": "Bradesco - IT Fundamentals",
-            "sharepoint": "Bradesco - Sharepoint",
-            "designgrafico": "Area Z - Graphic Design",
-            "aftereffects": "Area Z - After Effects",
-            "uspvemsaber": "USP - Vem Saber",
-            "uspnegociacao": "USP - International Negotiation",
             "certificates": "Certificates",
-            "descriptionCertificates": "Certificates of courses and events I have participated in."
+            "descriptionCertificates": "Certificates of courses and events I have participated in.",
+            "bttncertificates": "View Certificates",
+            "form-contact": "Get in touch",
+            "title-contact": "Contact me",
+            "description-contact": "Get in touch for collaborations, projects, or just to exchange ideas! I'm always open to new opportunities and challenges in the tech field.",
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send"
         }
     };
+
 
     let currentLang = localStorage.getItem("language") || "pt";
     setLanguage(currentLang);
