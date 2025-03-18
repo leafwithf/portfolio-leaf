@@ -60,14 +60,13 @@
         justify-content: center;
         width: 100%;
         height: auto;
-        margin-top: -75vh;
+        margin-top: -90vh;
         margin-left: 25vh;
     }
 
     .imagem-sobre img {
         height: 30vh;
         width: 50vh;
-
     }
 
     .socials {
@@ -114,7 +113,7 @@
     .left-sobre,
     .right-sobre {
         height: auto;
-        margin-top: 40%;
+        margin-top: 100%;
         margin-right: 10%;
     }
 
