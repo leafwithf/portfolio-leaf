@@ -24,7 +24,7 @@
     }
 
     .cta {
-        top: 20svh;
+        top: 33svh;
     }
 
     .conteudo-inicio a {
@@ -118,7 +118,7 @@
     .left-sobre,
     .right-sobre {
         height: auto;
-        margin-top: 100%;
+        margin-top: 90%;
         margin-right: 10%;
     }
 
