@@ -1,4 +1,7 @@
-emailjs.init("CyjWb3IImz46SQ4vZUfM9");  
+document.addEventListener("DOMContentLoaded", function () {
+    emailjs.init("yMyAcoSCYnlGNxm5j"); // Use a chave pública que você forneceu
+});
+
 
 document.querySelector(".form").addEventListener("submit", function(event) {
     event.preventDefault(); 
@@ -50,7 +53,7 @@ function submitForm(name, phone, email, message) {
         time: currentTime 
     };
 
-    emailjs.send("service_hvwnd6t", "template_dmojyra", formData)
+    emailjs.send("service_hvwnd6t", "template_johnytn", formData)
     .then(function(response) {
         console.log("Success:", response);
         alert("Formulário enviado com sucesso!");

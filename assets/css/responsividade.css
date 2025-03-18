@@ -1,75 +1,3 @@
-@media (max-width: 1024px) {
-    /* Ajustes gerais */
-    body {
-        font-size: 14px; /* Reduzir o tamanho da fonte para melhor legibilidade */
-    }
-
-    .header {
-        padding: 0.5rem 1rem; /* Reduzir o padding do header */
-    }
-
-    .logo img {
-        width: 70px; /* Reduzir o tamanho do logo */
-    }
-
-    .menu {
-        flex-direction: column; /* Mudar a direção do menu para coluna */
-        align-items: flex-start; /* Alinhar itens à esquerda */
-    }
-
-    .nav-menu a {
-        font-size: 2rem; /* Reduzir o tamanho da fonte dos links do menu */
-    }
-
-    .inicio .name-inicio {
-        font-size: 100px; /* Reduzir o tamanho da fonte */
-    }
-
-    .destaque-inicio {
-        font-size: 100px; /* Reduzir o tamanho da fonte */
-    }
-
-    .cta {
-        padding: 0.4em 1em; /* Ajustar o padding do botão CTA */
-    }
-
-    .sobre .container-sobre {
-        flex-direction: column; /* Mudar a direção para coluna */
-        align-items: center; /* Centralizar os itens */
-    }
-
-    .skills .container-skills {
-        flex-direction: column; /* Mudar a direção para coluna */
-    }
-
-    .certificates .grid-certificates {
-        grid-template-columns: repeat(2, 1fr); /* Mudar para 2 colunas */
-    }
-
-    .portfolio .gridPortfolio {
-        grid-template-columns: repeat(1, 1fr); /* Mudar para 1 coluna */
-    }
-
-    .footer {
-        flex-direction: column; /* Mudar a direção do footer para coluna */
-        align-items: center; /* Centralizar os itens */
-    }
-
-    .footer-column {
-        flex-direction: column; /* Mudar a direção das colunas do footer para coluna */
-        align-items: center; /* Centralizar os itens */
-    }
-
-    .contact {
-        flex-direction: column; /* Mudar a direção do contato para coluna */
-        align-items: center; /* Centralizar os itens */
-    }
-
-    .contact-item {
-        margin-bottom: 20px; /* Adicionar espaço entre os itens de contato */
-    }
-}
-
 /* Responsividade antiga */
 @media (max-width: 1024px) {
 
@@ -303,11 +231,7 @@
         height: auto;
     }
 
-    .logo-inicio img {
-        content: url('../../assets/img/logo.png');
-        transform: translateX(150%) translateY(-290%) scale(3);
-    }
-
+ 
     .surname-inicio {
         margin-right: 5%;
     }
