@@ -60,13 +60,14 @@
         justify-content: center;
         width: 100%;
         height: auto;
-        margin-top: -90vh;
+        margin-top: -75vh;
         margin-left: 25vh;
     }
 
     .imagem-sobre img {
         height: 30vh;
         width: 50vh;
+
     }
 
     .socials {
