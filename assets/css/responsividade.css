@@ -67,7 +67,6 @@
     .imagem-sobre img {
         height: 30vh;
         width: 50vh;
-        object-fit: cover;
     }
 
     .socials {
@@ -114,7 +113,7 @@
     .left-sobre,
     .right-sobre {
         height: auto;
-        margin-top: 20%;
+        margin-top: 40%;
         margin-right: 10%;
     }
 
