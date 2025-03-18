@@ -584,7 +584,7 @@ header.visible,
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0;
+    top: 50vh;
 }
 
 .imagem-sobre img {
