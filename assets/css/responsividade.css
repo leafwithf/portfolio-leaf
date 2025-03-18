@@ -56,12 +56,17 @@
         width: 50vh;
     }
 
+    .left-sobre {
+        width: 100%;
+        height: auto;
+        margin-left: 25vh;    
+    }
+
     .imagem-sobre {
         justify-content: center;
         width: 100%;
         height: auto;
-        margin-top: -90vh;
-        margin-left: 25vh;
+        transform: translatey(-300%);
     }
 
     .imagem-sobre img {
